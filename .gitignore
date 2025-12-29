@@ -32,12 +32,19 @@ htmlcov/
 .hypothesis/
 *.log
 
-# Environment
+# Environment Variables (CRITICAL - Never commit these!)
 .env
+backend/.env
+frontend/.env.local
 .venv
 venv/
 ENV/
 env/
+*.env.local
+*.env.*.local
+.env.development.local
+.env.test.local
+.env.production.local
 
 # Frontend
 frontend/node_modules/
@@ -61,9 +68,14 @@ frontend/.env.development.local
 data/raw_ships/*.json
 data/ship_images/*.jpg
 data/ship_images/*.png
+data/ship_images/*.webp
+outputs/
 outputs/*.pdf
-outputs/transcripts/*.pdf
-outputs/fleet_guides/*.pdf
+outputs/transcripts/
+outputs/fleet_guides/
+uploads/
+backend/uploads/
+backend/outputs/
 
 # Database
 *.db
@@ -81,3 +93,15 @@ logs/
 # Temporary files
 temp/
 tmp/
+*.tmp
+*.bak
+*.swp
+
+# API Keys and Secrets (Double-check!)
+*_key.txt
+*_secret.txt
+credentials.json
+service-account.json
+
+# Render deployment (optional - can commit these)
+# render.yaml
