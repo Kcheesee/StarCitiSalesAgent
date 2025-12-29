@@ -189,7 +189,7 @@ function ConversationPage() {
           </div>
 
           {/* ElevenLabs Widget Container */}
-          <div className="flex justify-center">
+          <div className="flex flex-col items-center space-y-6">
             {!isWidgetLoaded ? (
               <div className="bg-gray-800 border-2 border-gray-700 rounded-2xl p-12 text-center">
                 <svg className="animate-spin h-12 w-12 text-blue-500 mx-auto mb-4" fill="none" viewBox="0 0 24 24">
@@ -199,9 +199,27 @@ function ConversationPage() {
                 <p className="text-gray-400">Loading voice assistant...</p>
               </div>
             ) : (
-              <elevenlabs-convai
-                agent-id="agent_6401kdgp1fd7fmvax85zb5s0sa3s"
-              />
+              <>
+                <elevenlabs-convai
+                  agent-id="agent_6401kdgp1fd7fmvax85zb5s0sa3s"
+                />
+
+                {/* End Conversation Button */}
+                {!conversationEnded && (
+                  <button
+                    onClick={() => {
+                      // Fire the conversation ended event
+                      window.dispatchEvent(new Event('elevenlabs-conversation-ended'));
+                    }}
+                    className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 flex items-center space-x-3 border-2 border-blue-500"
+                  >
+                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span>Finish & Get My Fleet Guide</span>
+                  </button>
+                )}
+              </>
             )}
           </div>
 
