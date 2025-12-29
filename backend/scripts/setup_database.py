@@ -11,6 +11,8 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from app.database import engine, SessionLocal, Base
+# Import all models so they register with Base
+from app.models import Ship, Manufacturer, ShipEmbedding, ShipHardpoint, ShipComponent, ShipVehicleBay, Conversation
 import subprocess
 
 
