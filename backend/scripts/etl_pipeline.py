@@ -1,4 +1,4 @@
-222"""
+"""
 ETL Pipeline - Transform raw ship JSON data into database
 Loads all 116 ships from /data/raw_ships/ into PostgreSQL
 """
