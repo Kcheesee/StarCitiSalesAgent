@@ -1,4 +1,4 @@
-"""
+222"""
 ETL Pipeline - Transform raw ship JSON data into database
 Loads all 116 ships from /data/raw_ships/ into PostgreSQL
 """
@@ -23,8 +23,11 @@ from app.models import (
 )
 from sqlalchemy import text
 
-# Paths
-DATA_DIR = Path("/Users/jackalmac/Desktop/Code World/StarCitiSalesAgent/data")
+# Use relative paths that work anywhere (local dev or Render)
+# Script is in backend/scripts/, so go up 2 levels to project root, then into data/
+SCRIPT_DIR = Path(__file__).parent
+PROJECT_ROOT = SCRIPT_DIR.parent.parent
+DATA_DIR = PROJECT_ROOT / "data"
 RAW_SHIPS_DIR = DATA_DIR / "raw_ships"
 
 
