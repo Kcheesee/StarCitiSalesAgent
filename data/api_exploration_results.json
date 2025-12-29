@@ -1,0 +1,2606 @@
+{
+  "successful_ships": [
+    {
+      "slug": "gladius",
+      "category": "Fighter"
+    },
+    {
+      "slug": "arrow",
+      "category": "Fighter"
+    },
+    {
+      "slug": "sabre",
+      "category": "Fighter"
+    },
+    {
+      "slug": "freelancer",
+      "category": "Cargo"
+    },
+    {
+      "slug": "hull-a",
+      "category": "Cargo"
+    },
+    {
+      "slug": "caterpillar",
+      "category": "Cargo"
+    },
+    {
+      "slug": "c2-hercules",
+      "category": "Cargo"
+    },
+    {
+      "slug": "carrack",
+      "category": "Exploration"
+    },
+    {
+      "slug": "constellation-andromeda",
+      "category": "Exploration"
+    },
+    {
+      "slug": "terrapin",
+      "category": "Exploration"
+    },
+    {
+      "slug": "315p",
+      "category": "Exploration"
+    },
+    {
+      "slug": "prospector",
+      "category": "Mining"
+    },
+    {
+      "slug": "mole",
+      "category": "Mining"
+    },
+    {
+      "slug": "cutlass-black",
+      "category": "Multi-role"
+    },
+    {
+      "slug": "vanguard-warden",
+      "category": "Multi-role"
+    },
+    {
+      "slug": "400i",
+      "category": "Multi-role"
+    },
+    {
+      "slug": "aurora-mr",
+      "category": "Starter"
+    },
+    {
+      "slug": "mustang-alpha",
+      "category": "Starter"
+    },
+    {
+      "slug": "avenger-titan",
+      "category": "Starter"
+    },
+    {
+      "slug": "hammerhead",
+      "category": "Large"
+    },
+    {
+      "slug": "890-jump",
+      "category": "Large"
+    },
+    {
+      "slug": "reclaimer",
+      "category": "Large"
+    },
+    {
+      "slug": "mpuv-cargo",
+      "category": "Small"
+    },
+    {
+      "slug": "p-52-merlin",
+      "category": "Small"
+    }
+  ],
+  "failed_ships": [
+    {
+      "slug": "hornet",
+      "category": "Fighter",
+      "error": "Status 404"
+    },
+    {
+      "slug": "origin-85x",
+      "category": "Small",
+      "error": "Status 404"
+    }
+  ],
+  "field_statistics": {
+    "critical_fields": [
+      {
+        "field": "afterburner",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          "dict (complex)",
+          "dict (complex)",
+          "dict (complex)"
+        ]
+      },
+      {
+        "field": "afterburner.angular_cost",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "field": "afterburner.capacitor",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          20,
+          20,
+          20
+        ]
+      },
+      {
+        "field": "afterburner.idle_cost",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "field": "afterburner.linear_cost",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "field": "afterburner.pitch_boost_multiplier",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          1.2,
+          1.2,
+          1.2
+        ]
+      },
+      {
+        "field": "afterburner.pre_delay_time",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "field": "afterburner.ramp_down_time",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          0.3,
+          0.2,
+          0.2
+        ]
+      },
+      {
+        "field": "afterburner.ramp_up_time",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          0.6,
+          0.6,
+          0.6
+        ]
+      },
+      {
+        "field": "afterburner.regen_delay_after_use",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          0.2,
+          0.2,
+          0.5
+        ]
+      },
+      {
+        "field": "afterburner.regen_per_sec",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          0.75,
+          0.75,
+          0.75
+        ]
+      },
+      {
+        "field": "afterburner.roll_boost_multiplier",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          1.2,
+          1.2,
+          1.2
+        ]
+      },
+      {
+        "field": "afterburner.yaw_boost_multiplier",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          1.2,
+          1.2,
+          1.2
+        ]
+      },
+      {
+        "field": "agility",
+        "completion": 100.0,
+        "present": 24,
+        "total": 24,
+        "samples": [
+          "dict (complex)",
+          "dict (complex)",
+          "dict (complex)"
+        ]
+      },
+      {
+        "field": "agility.acceleration",
+        "completion": 100.0,
+        "present": 24,
+        "total": 24,
+        "samples": [
+          "dict (complex)",
+          "dict (complex)",
+          "dict (complex)"
+        ]
+      },
+      {
+        "field": "agility.acceleration.main",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          95.732,
+          149.459,
+          105.905
+        ]
+      },
+      {
+        "field": "agility.acceleration.main_g",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          9.761,
+          15.24,
+          10.799
+        ]
+      },
+      {
+        "field": "agility.acceleration.maneuvering",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          216.262,
+          116.289,
+          68.901
+        ]
+      },
+      {
+        "field": "agility.acceleration.maneuvering_g",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          22.052,
+          11.858,
+          7.025
+        ]
+      },
+      {
+        "field": "agility.acceleration.retro",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          3.954,
+          49.819,
+          21.662
+        ]
+      },
+      {
+        "field": "agility.acceleration.retro_g",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          0.403,
+          5.08,
+          2.208
+        ]
+      },
+      {
+        "field": "agility.acceleration.vtol",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "field": "agility.acceleration.vtol_g",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "field": "armor",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          "dict (complex)",
+          "dict (complex)",
+          "dict (complex)"
+        ]
+      },
+      {
+        "field": "armor.damage_biochemical",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "field": "armor.damage_distortion",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "field": "armor.damage_energy",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "field": "armor.damage_physical",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          0.62,
+          0.65,
+          0.62
+        ]
+      },
+      {
+        "field": "armor.damage_stun",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "field": "armor.damage_thermal",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "field": "armor.signal_cross_section",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          1.13,
+          1,
+          0.6
+        ]
+      },
+      {
+        "field": "armor.signal_electromagnetic",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          1.13,
+          1,
+          0.6
+        ]
+      },
+      {
+        "field": "armor.signal_infrared",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          1.13,
+          1,
+          0.6
+        ]
+      },
+      {
+        "field": "cargo_capacity",
+        "completion": 100.0,
+        "present": 24,
+        "total": 24,
+        "samples": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "field": "cargo_limits",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          {
+            "min_size": null,
+            "max_size": null
+          },
+          {
+            "min_size": null,
+            "max_size": null
+          },
+          {
+            "min_size": null,
+            "max_size": null
+          }
+        ]
+      },
+      {
+        "field": "cargo_limits.max_size.x",
+        "completion": 100.0,
+        "present": 6,
+        "total": 6,
+        "samples": [
+          2.5,
+          5,
+          2.5
+        ]
+      },
+      {
+        "field": "cargo_limits.max_size.y",
+        "completion": 100.0,
+        "present": 6,
+        "total": 6,
+        "samples": [
+          10,
+          5,
+          5
+        ]
+      },
+      {
+        "field": "cargo_limits.max_size.z",
+        "completion": 100.0,
+        "present": 6,
+        "total": 6,
+        "samples": [
+          2.5,
+          2.5,
+          2.5
+        ]
+      },
+      {
+        "field": "cargo_limits.min_size.x",
+        "completion": 100.0,
+        "present": 6,
+        "total": 6,
+        "samples": [
+          1.25,
+          1.25,
+          1.25
+        ]
+      },
+      {
+        "field": "cargo_limits.min_size.y",
+        "completion": 100.0,
+        "present": 6,
+        "total": 6,
+        "samples": [
+          1.25,
+          1.25,
+          1.25
+        ]
+      },
+      {
+        "field": "cargo_limits.min_size.z",
+        "completion": 100.0,
+        "present": 6,
+        "total": 6,
+        "samples": [
+          1.25,
+          1.25,
+          1.25
+        ]
+      },
+      {
+        "field": "chassis_id",
+        "completion": 100.0,
+        "present": 24,
+        "total": 24,
+        "samples": [
+          18,
+          70,
+          35
+        ]
+      },
+      {
+        "field": "class_name",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          "AEGS_Gladius",
+          "ANVL_Arrow",
+          "AEGS_Sabre"
+        ]
+      },
+      {
+        "field": "crew",
+        "completion": 100.0,
+        "present": 24,
+        "total": 24,
+        "samples": [
+          {
+            "min": 1,
+            "max": null,
+            "weapon": 0,
+            "operation": null
+          },
+          {
+            "min": 1,
+            "max": null,
+            "weapon": 0,
+            "operation": null
+          },
+          {
+            "min": 1,
+            "max": null,
+            "weapon": 0,
+            "operation": null
+          }
+        ]
+      },
+      {
+        "field": "crew.min",
+        "completion": 100.0,
+        "present": 24,
+        "total": 24,
+        "samples": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "field": "crew.weapon",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "field": "description",
+        "completion": 100.0,
+        "present": 24,
+        "total": 24,
+        "samples": [
+          "dict (complex)",
+          "dict (complex)",
+          "dict (complex)"
+        ]
+      },
+      {
+        "field": "description.de_DE",
+        "completion": 100.0,
+        "present": 24,
+        "total": 24,
+        "samples": [
+          "Die Gladius ist ein \u00e4lteres Design, das im Laufe der Jahre aktualisiert wurde, um mit der modernen Technologie Schritt zu halten. In milit\u00e4rischen Kreisen ist die Gladius wegen ihrer Leistung und ihrer Einfachheit sehr beliebt. Die Gladius ist ein schneller, leichter K\u00e4mpfer mit einem Fokus auf Luftkampf und ist ein idealer Abfangj\u00e4ger oder Begleitschiff.",
+          "Lernen Sie Anvils \"leichten K\u00e4mpfer der Zukunft\" kennen. Mit einem ultra-aerodynamischen Rahmen, einem leichten Profil und der fortschrittlichsten Man\u00f6vriertriebwerkstechnologie ist es das agilste Schiff seiner Klasse. Dank eines gro\u00dfz\u00fcgigen Standardwaffenpakets, das vier Raketenhalterungen und eine ganze Reihe von Gegenma\u00dfnahmen umfasst, kann es sich auch im Falle eines Knock-Down-Dragouts behaupten. Die Arrow wurde speziell entwickelt, um M\u00f6chtegern-Interlopers v\u00f6llig verwirrt zu lassen. Schlie\u00dflich, wie k\u00f6nnen sie etwas t\u00f6ten, was sie nicht erwischen k\u00f6nnen?",
+          "Als Teil von Aegis Dynamics' Phase Zwei der neuen Schiffsmodelle wurde die Sabre als Raum\u00fcberlegenheitsj\u00e4ger f\u00fcr Situationen entwickelt, in denen Sie einen leichteren Fu\u00dfabdruck hinterlassen m\u00fcssen. Die Sabre wurde als schneller Helfer entwickelt und ist mehr als in der Lage, die Dominanz auf dem Schlachtfeld f\u00fcr eine Vielzahl von Kampfszenarien zu etablieren."
+        ]
+      },
+      {
+        "field": "description.en_EN",
+        "completion": 100.0,
+        "present": 24,
+        "total": 24,
+        "samples": [
+          "The Gladius is an older design which has been updated over the years to keep up with modern technology. In military circles, the Gladius is beloved for its performance and its simplicity. A fast, light fighter with a laser-focus on dogfighting, the Gladius is an ideal interceptor or escort ship.",
+          "Meet Anvil's \u2018light fighter of the future\u2019. Featuring an ultra-aerodynamic frame, slight profile, and the most advanced manoeuvring thruster tech available, it\u2019s the most agile ship in its class. It can also hold its own in a knock-down-drag-out thanks to a generous standard weapons package that includes quad missile racks and a full complement of countermeasures. The Arrow is designed specifically to leave would-be interlopers thoroughly bewildered. After all, how can they kill what they can't catch?",
+          "Part of Aegis Dynamics\u2019 Phase Two of new ship models, the Sabre was designed as a space superiority fighter for those situations where you need to leave a lighter footprint. Designed to be a rapid responder, the Sabre is more than capable of establishing battlefield dominance for any number of combat scenarios."
+        ]
+      },
+      {
+        "field": "description.zh_CN",
+        "completion": 100.0,
+        "present": 24,
+        "total": 24,
+        "samples": [
+          "\u683c\u62c9\u8fea\u4e4c\u65af\u662f\u4e00\u79cd\u8f83\u8001\u7684\u8bbe\u8ba1\uff0c\u7ecf\u8fc7\u591a\u5e74\u66f4\u65b0\uff0c\u5df2\u8ddf\u4e0a\u73b0\u4ee3\u6280\u672f\u7684\u6b65\u4f10\u3002\u5728\u519b\u4e8b\u9886\u57df\uff0c\u683c\u62c9\u8fea\u4e4c\u65af\u56e0\u5176\u6027\u80fd\u548c\u7b80\u6d01\u6027\u800c\u5907\u53d7\u559c\u7231\u3002\u683c\u62c9\u8fea\u4e4c\u65af\u662f\u4e00\u79cd\u901f\u5ea6\u5feb\u3001\u91cd\u91cf\u8f7b\u7684\u6218\u6597\u673a\uff0c\u4e3b\u8981\u7528\u4e8e\u72d7\u6597\uff0c\u662f\u7406\u60f3\u7684\u62e6\u622a\u8230\u6216\u62a4\u822a\u8230\u3002",
+          "\u8ba4\u8bc6\u4e00\u4e0b Anvil \u7684 \u201c\u672a\u6765\u8f7b\u578b\u6218\u6597\u673a\u201d\u3002\u5b83\u91c7\u7528\u4e86\u8d85\u7a7a\u6c14\u52a8\u529b\u5b66\u6846\u67b6\u3001\u8f7b\u5de7\u7684\u5916\u5f62\u548c\u6700\u5148\u8fdb\u7684\u64cd\u7eb5\u63a8\u8fdb\u5668\u6280\u672f\uff0c\u662f\u540c\u7ea7\u522b\u4e2d\u6700\u7075\u6d3b\u7684\u6218\u8230\u3002\u7531\u4e8e\u914d\u5907\u4e86\u5305\u62ec\u56db\u8054\u88c5\u5bfc\u5f39\u53d1\u5c04\u67b6\u548c\u5168\u5957\u53cd\u5bfc\u7cfb\u7edf\u5728\u5185\u7684\u4e30\u5bcc\u7684\u6807\u51c6\u6b66\u5668\u5305\uff0c\u5b83\u8fd8\u80fd\u5728\u51fb\u843d-\u62d6\u62fd\u5bf9\u6297\u4e2d\u4fdd\u6301\u81ea\u5df1\u7684\u4f18\u52bf\u3002\u7bad \"\u53f7\u7684\u8bbe\u8ba1\u76ee\u7684\u5c31\u662f\u8ba9\u6f5c\u5728\u7684\u5165\u4fb5\u8005\u65e0\u6240\u9002\u4ece\u3002\u6bd5\u7adf\uff0c\u4ed6\u4eec\u600e\u4e48\u80fd\u6740\u6b7b\u81ea\u5df1\u6293\u4e0d\u5230\u7684\u4e1c\u897f\u5462\uff1f",
+          "\u4f5c\u4e3a\u5b99\u65af\u76fe\u52a8\u529b\u516c\u53f8\uff08Aegis Dynamics\uff09\u7b2c\u4e8c\u9636\u6bb5\u65b0\u578b\u8230\u8247\u7684\u4e00\u90e8\u5206\uff0c\u201c\u4f69\u5200 \u201d\u53f7\u88ab\u8bbe\u8ba1\u4e3a\u7a7a\u95f4\u4f18\u52bf\u6218\u6597\u673a\uff0c\u9002\u7528\u4e8e\u9700\u8981\u7559\u4e0b\u8f83\u8f7b\u8db3\u8ff9\u7684\u60c5\u51b5\u3002\u4f5c\u4e3a\u5feb\u901f\u53cd\u5e94\u578b\u6218\u6597\u673a\uff0c\u201c\u4f69\u5200 \u201d\u80fd\u5728\u5404\u79cd\u6218\u6597\u60c5\u51b5\u4e0b\u5efa\u7acb\u6218\u573a\u4f18\u52bf\u3002"
+        ]
+      },
+      {
+        "field": "emission",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          {
+            "ir": 8491,
+            "em_idle": 4941,
+            "em_max": 20306
+          },
+          {
+            "ir": 6050,
+            "em_idle": 5043,
+            "em_max": 20385
+          },
+          {
+            "ir": 7932,
+            "em_idle": 6133,
+            "em_max": 20813
+          }
+        ]
+      },
+      {
+        "field": "emission.em_idle",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          4941,
+          5043,
+          6133
+        ]
+      },
+      {
+        "field": "emission.em_max",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          20306,
+          20385,
+          20813
+        ]
+      },
+      {
+        "field": "emission.ir",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          8491,
+          6050,
+          7932
+        ]
+      },
+      {
+        "field": "foci",
+        "completion": 100.0,
+        "present": 24,
+        "total": 24,
+        "samples": [
+          [
+            {
+              "en_EN": "Light Fighter",
+              "de_DE": "Leichter J\u00e4ger",
+              "zh_CN": "\u8f7b\u578b\u6218\u6597\u673a"
+            }
+          ],
+          [
+            {
+              "en_EN": "Light Fighter",
+              "de_DE": "Leichter J\u00e4ger",
+              "zh_CN": "\u8f7b\u578b\u6218\u6597\u673a"
+            }
+          ],
+          [
+            {
+              "en_EN": "Stealth Fighter",
+              "de_DE": "Tarnkappenj\u00e4ger",
+              "zh_CN": "\u9690\u5f62\u6218\u6597\u673a"
+            }
+          ]
+        ]
+      },
+      {
+        "field": "fuel",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          "dict (complex)",
+          "dict (complex)",
+          "dict (complex)"
+        ]
+      },
+      {
+        "field": "fuel.capacity",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          13.5,
+          7.5,
+          13.5
+        ]
+      },
+      {
+        "field": "fuel.intake_rate",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "field": "fuel.usage",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          {
+            "main": 30,
+            "maneuvering": 33,
+            "retro": 1,
+            "vtol": 0
+          },
+          {
+            "main": 30,
+            "maneuvering": 11,
+            "retro": 10,
+            "vtol": 0
+          },
+          {
+            "main": 81,
+            "maneuvering": 18,
+            "retro": 7,
+            "vtol": 0
+          }
+        ]
+      },
+      {
+        "field": "fuel.usage.main",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          30,
+          30,
+          81
+        ]
+      },
+      {
+        "field": "fuel.usage.maneuvering",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          33,
+          11,
+          18
+        ]
+      },
+      {
+        "field": "fuel.usage.retro",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          1,
+          10,
+          7
+        ]
+      },
+      {
+        "field": "fuel.usage.vtol",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "field": "health",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          6110,
+          8580,
+          37000
+        ]
+      },
+      {
+        "field": "id",
+        "completion": 100.0,
+        "present": 24,
+        "total": 24,
+        "samples": [
+          60,
+          173,
+          98
+        ]
+      },
+      {
+        "field": "insurance",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          {
+            "claim_time": 5.83,
+            "expedite_time": 1.94,
+            "expedite_cost": 2335
+          },
+          {
+            "claim_time": 5.27,
+            "expedite_time": 1.76,
+            "expedite_cost": 3121
+          },
+          {
+            "claim_time": 9.45,
+            "expedite_time": 3.15,
+            "expedite_cost": 4689
+          }
+        ]
+      },
+      {
+        "field": "insurance.claim_time",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          5.83,
+          5.27,
+          9.45
+        ]
+      },
+      {
+        "field": "insurance.expedite_cost",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          2335,
+          3121,
+          4689
+        ]
+      },
+      {
+        "field": "insurance.expedite_time",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          1.94,
+          1.76,
+          3.15
+        ]
+      },
+      {
+        "field": "manufacturer",
+        "completion": 100.0,
+        "present": 24,
+        "total": 24,
+        "samples": [
+          {
+            "name": "Aegis Dynamics",
+            "code": "AEGS"
+          },
+          {
+            "name": "Anvil Aerospace",
+            "code": "ANVL"
+          },
+          {
+            "name": "Aegis Dynamics",
+            "code": "AEGS"
+          }
+        ]
+      },
+      {
+        "field": "manufacturer.code",
+        "completion": 100.0,
+        "present": 24,
+        "total": 24,
+        "samples": [
+          "AEGS",
+          "ANVL",
+          "AEGS"
+        ]
+      },
+      {
+        "field": "manufacturer.name",
+        "completion": 100.0,
+        "present": 24,
+        "total": 24,
+        "samples": [
+          "Aegis Dynamics",
+          "Anvil Aerospace",
+          "Aegis Dynamics"
+        ]
+      },
+      {
+        "field": "mass",
+        "completion": 100.0,
+        "present": 24,
+        "total": 24,
+        "samples": [
+          48552,
+          30510,
+          83093
+        ]
+      },
+      {
+        "field": "msrp",
+        "completion": 100.0,
+        "present": 24,
+        "total": 24,
+        "samples": [
+          90,
+          75,
+          175
+        ]
+      },
+      {
+        "field": "name",
+        "completion": 100.0,
+        "present": 24,
+        "total": 24,
+        "samples": [
+          "Gladius",
+          "Arrow",
+          "Sabre"
+        ]
+      },
+      {
+        "field": "parts",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          "list (complex)",
+          "list (complex)",
+          "list (complex)"
+        ]
+      },
+      {
+        "field": "personal_inventory",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "field": "pledge_url",
+        "completion": 100.0,
+        "present": 24,
+        "total": 24,
+        "samples": [
+          "https://robertsspaceindustries.com/pledge/ships/gladius/Gladius",
+          "https://robertsspaceindustries.com/pledge/ships/anvil-arrow/Arrow",
+          "https://robertsspaceindustries.com/pledge/ships/sabre/Sabre"
+        ]
+      },
+      {
+        "field": "production_note",
+        "completion": 100.0,
+        "present": 24,
+        "total": 24,
+        "samples": [
+          {
+            "en_EN": "None",
+            "de_DE": "Keine",
+            "zh_CN": "\u65e0"
+          },
+          {
+            "en_EN": "None",
+            "de_DE": "Keine",
+            "zh_CN": "\u65e0"
+          },
+          {
+            "en_EN": "Flight Ready",
+            "de_DE": "Flugbereit",
+            "zh_CN": "\u98de\u884c\u51c6\u5907"
+          }
+        ]
+      },
+      {
+        "field": "production_note.de_DE",
+        "completion": 100.0,
+        "present": 24,
+        "total": 24,
+        "samples": [
+          "Keine",
+          "Keine",
+          "Flugbereit"
+        ]
+      },
+      {
+        "field": "production_note.en_EN",
+        "completion": 100.0,
+        "present": 24,
+        "total": 24,
+        "samples": [
+          "None",
+          "None",
+          "Flight Ready"
+        ]
+      },
+      {
+        "field": "production_note.zh_CN",
+        "completion": 100.0,
+        "present": 24,
+        "total": 24,
+        "samples": [
+          "\u65e0",
+          "\u65e0",
+          "\u98de\u884c\u51c6\u5907"
+        ]
+      },
+      {
+        "field": "production_status",
+        "completion": 100.0,
+        "present": 24,
+        "total": 24,
+        "samples": [
+          {
+            "en_EN": "flight-ready",
+            "de_DE": "Flugbereit",
+            "zh_CN": "\u53ef\u98de\u884c"
+          },
+          {
+            "en_EN": "flight-ready",
+            "de_DE": "Flugbereit",
+            "zh_CN": "\u53ef\u98de\u884c"
+          },
+          {
+            "en_EN": "flight-ready",
+            "de_DE": "Flugbereit",
+            "zh_CN": "\u53ef\u98de\u884c"
+          }
+        ]
+      },
+      {
+        "field": "production_status.de_DE",
+        "completion": 100.0,
+        "present": 24,
+        "total": 24,
+        "samples": [
+          "Flugbereit",
+          "Flugbereit",
+          "Flugbereit"
+        ]
+      },
+      {
+        "field": "production_status.en_EN",
+        "completion": 100.0,
+        "present": 24,
+        "total": 24,
+        "samples": [
+          "flight-ready",
+          "flight-ready",
+          "flight-ready"
+        ]
+      },
+      {
+        "field": "production_status.zh_CN",
+        "completion": 100.0,
+        "present": 24,
+        "total": 24,
+        "samples": [
+          "\u53ef\u98de\u884c",
+          "\u53ef\u98de\u884c",
+          "\u53ef\u98de\u884c"
+        ]
+      },
+      {
+        "field": "quantum",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          "dict (complex)",
+          "dict (complex)",
+          "dict (complex)"
+        ]
+      },
+      {
+        "field": "quantum.quantum_fuel_capacity",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          1.3,
+          1.1,
+          1.3
+        ]
+      },
+      {
+        "field": "quantum.quantum_range",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          69817400.64446831,
+          59076262.083780885,
+          78031212.484994
+        ]
+      },
+      {
+        "field": "quantum.quantum_speed",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          190000000,
+          190000000,
+          140000000
+        ]
+      },
+      {
+        "field": "quantum.quantum_spool_time",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "field": "shield_face_type",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          "Bubble",
+          "Bubble",
+          "Bubble"
+        ]
+      },
+      {
+        "field": "shield_hp",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          3460,
+          1730,
+          2100
+        ]
+      },
+      {
+        "field": "size",
+        "completion": 100.0,
+        "present": 24,
+        "total": 24,
+        "samples": [
+          {
+            "en_EN": "small",
+            "de_DE": "Klein",
+            "zh_CN": "\u5c0f"
+          },
+          {
+            "en_EN": "small",
+            "de_DE": "Klein",
+            "zh_CN": "\u5c0f"
+          },
+          {
+            "en_EN": "small",
+            "de_DE": "Klein",
+            "zh_CN": "\u5c0f"
+          }
+        ]
+      },
+      {
+        "field": "size.de_DE",
+        "completion": 100.0,
+        "present": 24,
+        "total": 24,
+        "samples": [
+          "Klein",
+          "Klein",
+          "Klein"
+        ]
+      },
+      {
+        "field": "size.en_EN",
+        "completion": 100.0,
+        "present": 24,
+        "total": 24,
+        "samples": [
+          "small",
+          "small",
+          "small"
+        ]
+      },
+      {
+        "field": "size.zh_CN",
+        "completion": 100.0,
+        "present": 23,
+        "total": 23,
+        "samples": [
+          "\u5c0f",
+          "\u5c0f",
+          "\u5c0f"
+        ]
+      },
+      {
+        "field": "size_class",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          2,
+          2,
+          2
+        ]
+      },
+      {
+        "field": "sizes",
+        "completion": 100.0,
+        "present": 24,
+        "total": 24,
+        "samples": [
+          {
+            "length": 21,
+            "beam": 17.5,
+            "height": 5.5
+          },
+          {
+            "length": 17.25,
+            "beam": 12.25,
+            "height": 4.5
+          },
+          {
+            "length": 24.5,
+            "beam": 24.5,
+            "height": 5
+          }
+        ]
+      },
+      {
+        "field": "sizes.beam",
+        "completion": 100.0,
+        "present": 24,
+        "total": 24,
+        "samples": [
+          17.5,
+          12.25,
+          24.5
+        ]
+      },
+      {
+        "field": "sizes.height",
+        "completion": 100.0,
+        "present": 24,
+        "total": 24,
+        "samples": [
+          5.5,
+          4.5,
+          5
+        ]
+      },
+      {
+        "field": "sizes.length",
+        "completion": 100.0,
+        "present": 24,
+        "total": 24,
+        "samples": [
+          21,
+          17.25,
+          24.5
+        ]
+      },
+      {
+        "field": "skus",
+        "completion": 95.83333333333334,
+        "present": 23,
+        "total": 24,
+        "samples": [
+          "list (complex)",
+          "list (complex)",
+          "list (complex)"
+        ]
+      },
+      {
+        "field": "slug",
+        "completion": 100.0,
+        "present": 24,
+        "total": 24,
+        "samples": [
+          "gladius",
+          "arrow",
+          "sabre"
+        ]
+      },
+      {
+        "field": "speed",
+        "completion": 100.0,
+        "present": 24,
+        "total": 24,
+        "samples": [
+          "dict (complex)",
+          "dict (complex)",
+          "dict (complex)"
+        ]
+      },
+      {
+        "field": "speed.max_to_zero",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          301.68,
+          24.387,
+          57.01
+        ]
+      },
+      {
+        "field": "speed.scm",
+        "completion": 100.0,
+        "present": 24,
+        "total": 24,
+        "samples": [
+          226,
+          229,
+          223
+        ]
+      },
+      {
+        "field": "speed.scm_boost_backward",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          268,
+          265,
+          230
+        ]
+      },
+      {
+        "field": "speed.scm_boost_forward",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          520,
+          515,
+          480
+        ]
+      },
+      {
+        "field": "speed.scm_to_zero",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          57.149,
+          4.596,
+          10.294
+        ]
+      },
+      {
+        "field": "speed.zero_to_max",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          12.461,
+          8.129,
+          11.661
+        ]
+      },
+      {
+        "field": "speed.zero_to_scm",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          2.36,
+          1.532,
+          2.105
+        ]
+      },
+      {
+        "field": "type",
+        "completion": 100.0,
+        "present": 24,
+        "total": 24,
+        "samples": [
+          {
+            "en_EN": "combat",
+            "de_DE": "Gefecht",
+            "zh_CN": "\u6253\u51fb"
+          },
+          {
+            "en_EN": "combat",
+            "de_DE": "Gefecht",
+            "zh_CN": "\u6253\u51fb"
+          },
+          {
+            "en_EN": "combat",
+            "de_DE": "Gefecht",
+            "zh_CN": "\u6253\u51fb"
+          }
+        ]
+      },
+      {
+        "field": "type.de_DE",
+        "completion": 100.0,
+        "present": 24,
+        "total": 24,
+        "samples": [
+          "Gefecht",
+          "Gefecht",
+          "Gefecht"
+        ]
+      },
+      {
+        "field": "type.en_EN",
+        "completion": 100.0,
+        "present": 24,
+        "total": 24,
+        "samples": [
+          "combat",
+          "combat",
+          "combat"
+        ]
+      },
+      {
+        "field": "type.zh_CN",
+        "completion": 100.0,
+        "present": 24,
+        "total": 24,
+        "samples": [
+          "\u6253\u51fb",
+          "\u6253\u51fb",
+          "\u6253\u51fb"
+        ]
+      },
+      {
+        "field": "updated_at",
+        "completion": 100.0,
+        "present": 24,
+        "total": 24,
+        "samples": [
+          "2025-11-26T12:53:44.000000Z",
+          "2025-09-24T05:45:24.000000Z",
+          "2025-11-26T12:58:44.000000Z"
+        ]
+      },
+      {
+        "field": "uuid",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          "b6b59889-7226-458e-a6b0-1c9392128a3c",
+          "eaeb562d-d4ac-43bd-a843-e8a6d69fad82",
+          "17276ad3-7636-40b8-969a-877a2b439b37"
+        ]
+      },
+      {
+        "field": "vehicle_inventory",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          1.3,
+          0.86,
+          1.3
+        ]
+      },
+      {
+        "field": "version",
+        "completion": 100.0,
+        "present": 13,
+        "total": 13,
+        "samples": [
+          "4.4.0-LIVE.10753606",
+          "4.4.0-LIVE.10753606",
+          "4.4.0-LIVE.10753606"
+        ]
+      }
+    ],
+    "common_fields": [
+      {
+        "field": "agility.pitch",
+        "completion": 54.166666666666664,
+        "present": 13,
+        "total": 24,
+        "samples": [
+          68,
+          75,
+          62
+        ]
+      },
+      {
+        "field": "agility.roll",
+        "completion": 54.166666666666664,
+        "present": 13,
+        "total": 24,
+        "samples": [
+          200,
+          205,
+          160
+        ]
+      },
+      {
+        "field": "agility.yaw",
+        "completion": 54.166666666666664,
+        "present": 13,
+        "total": 24,
+        "samples": [
+          52,
+          57,
+          48
+        ]
+      },
+      {
+        "field": "speed.max",
+        "completion": 54.166666666666664,
+        "present": 13,
+        "total": 24,
+        "samples": [
+          1193,
+          1215,
+          1235
+        ]
+      }
+    ],
+    "sparse_fields": [
+      {
+        "field": "agility.acceleration.x_axis",
+        "completion": 0.0
+      },
+      {
+        "field": "agility.acceleration.y_axis",
+        "completion": 0.0
+      },
+      {
+        "field": "agility.acceleration.z_axis",
+        "completion": 0.0
+      },
+      {
+        "field": "cargo_grids",
+        "completion": 46.15384615384615
+      },
+      {
+        "field": "cargo_limits.max_size",
+        "completion": 46.15384615384615
+      },
+      {
+        "field": "cargo_limits.min_size",
+        "completion": 46.15384615384615
+      },
+      {
+        "field": "crew.max",
+        "completion": 45.83333333333333
+      },
+      {
+        "field": "crew.operation",
+        "completion": 0.0
+      },
+      {
+        "field": "loaner",
+        "completion": 29.166666666666668
+      }
+    ]
+  },
+  "sample_ships_data": [
+    {
+      "data": {
+        "uuid": "b6b59889-7226-458e-a6b0-1c9392128a3c",
+        "name": "Gladius",
+        "slug": "gladius",
+        "class_name": "AEGS_Gladius",
+        "sizes": {
+          "length": 21,
+          "beam": 17.5,
+          "height": 5.5
+        },
+        "emission": {
+          "ir": 8491,
+          "em_idle": 4941,
+          "em_max": 20306
+        },
+        "mass": 48552,
+        "cargo_capacity": 0,
+        "cargo_grids": [],
+        "cargo_limits": {
+          "min_size": null,
+          "max_size": null
+        },
+        "vehicle_inventory": 1.3,
+        "personal_inventory": 0,
+        "crew": {
+          "min": 1,
+          "max": null,
+          "weapon": 0,
+          "operation": null
+        },
+        "health": 6110,
+        "shield_hp": 3460,
+        "shield_face_type": "Bubble",
+        "speed": {
+          "scm": 226,
+          "max": 1193,
+          "scm_boost_forward": 520,
+          "scm_boost_backward": 268,
+          "zero_to_scm": 2.36,
+          "zero_to_max": 12.461,
+          "scm_to_zero": 57.149,
+          "max_to_zero": 301.68
+        },
+        "afterburner": {
+          "pitch_boost_multiplier": 1.2,
+          "roll_boost_multiplier": 1.2,
+          "yaw_boost_multiplier": 1.2,
+          "capacitor": 20,
+          "idle_cost": 1,
+          "linear_cost": 0,
+          "angular_cost": 0,
+          "regen_per_sec": 0.75,
+          "regen_delay_after_use": 0.2,
+          "pre_delay_time": 0,
+          "ramp_up_time": 0.6,
+          "ramp_down_time": 0.3
+        },
+        "fuel": {
+          "capacity": 13.5,
+          "intake_rate": 0,
+          "usage": {
+            "main": 30,
+            "maneuvering": 33,
+            "retro": 1,
+            "vtol": 0
+          }
+        },
+        "quantum": {
+          "quantum_speed": 190000000,
+          "quantum_spool_time": 4,
+          "quantum_fuel_capacity": 1.3,
+          "quantum_range": 69817400.64446831
+        },
+        "agility": {
+          "pitch": 68,
+          "yaw": 52,
+          "roll": 200,
+          "acceleration": {
+            "main": 95.732,
+            "retro": 3.954,
+            "vtol": 0,
+            "maneuvering": 216.262,
+            "main_g": 9.761,
+            "retro_g": 0.403,
+            "vtol_g": 0,
+            "maneuvering_g": 22.052
+          }
+        },
+        "armor": {
+          "signal_infrared": 1.13,
+          "signal_electromagnetic": 1.13,
+          "signal_cross_section": 1.13,
+          "damage_physical": 0.62,
+          "damage_energy": 1,
+          "damage_distortion": 1,
+          "damage_thermal": 1,
+          "damage_biochemical": 1,
+          "damage_stun": 0
+        },
+        "foci": [
+          {
+            "en_EN": "Light Fighter",
+            "de_DE": "Leichter J\u00e4ger",
+            "zh_CN": "\u8f7b\u578b\u6218\u6597\u673a"
+          }
+        ],
+        "type": {
+          "en_EN": "combat",
+          "de_DE": "Gefecht",
+          "zh_CN": "\u6253\u51fb"
+        },
+        "description": {
+          "en_EN": "The Gladius is an older design which has been updated over the years to keep up with modern technology. In military circles, the Gladius is beloved for its performance and its simplicity. A fast, light fighter with a laser-focus on dogfighting, the Gladius is an ideal interceptor or escort ship.",
+          "de_DE": "Die Gladius ist ein \u00e4lteres Design, das im Laufe der Jahre aktualisiert wurde, um mit der modernen Technologie Schritt zu halten. In milit\u00e4rischen Kreisen ist die Gladius wegen ihrer Leistung und ihrer Einfachheit sehr beliebt. Die Gladius ist ein schneller, leichter K\u00e4mpfer mit einem Fokus auf Luftkampf und ist ein idealer Abfangj\u00e4ger oder Begleitschiff.",
+          "zh_CN": "\u683c\u62c9\u8fea\u4e4c\u65af\u662f\u4e00\u79cd\u8f83\u8001\u7684\u8bbe\u8ba1\uff0c\u7ecf\u8fc7\u591a\u5e74\u66f4\u65b0\uff0c\u5df2\u8ddf\u4e0a\u73b0\u4ee3\u6280\u672f\u7684\u6b65\u4f10\u3002\u5728\u519b\u4e8b\u9886\u57df\uff0c\u683c\u62c9\u8fea\u4e4c\u65af\u56e0\u5176\u6027\u80fd\u548c\u7b80\u6d01\u6027\u800c\u5907\u53d7\u559c\u7231\u3002\u683c\u62c9\u8fea\u4e4c\u65af\u662f\u4e00\u79cd\u901f\u5ea6\u5feb\u3001\u91cd\u91cf\u8f7b\u7684\u6218\u6597\u673a\uff0c\u4e3b\u8981\u7528\u4e8e\u72d7\u6597\uff0c\u662f\u7406\u60f3\u7684\u62e6\u622a\u8230\u6216\u62a4\u822a\u8230\u3002"
+        },
+        "size_class": 2,
+        "manufacturer": {
+          "name": "Aegis Dynamics",
+          "code": "AEGS"
+        },
+        "insurance": {
+          "claim_time": 5.83,
+          "expedite_time": 1.94,
+          "expedite_cost": 2335
+        },
+        "parts": [
+          {
+            "name": "AEGS_Gladius",
+            "display_name": "Aegs gladius",
+            "damage_max": 0,
+            "children": [
+              {
+                "name": "Body",
+                "display_name": "Body",
+                "damage_max": 2350,
+                "children": [
+                  {
+                    "name": "Nose",
+                    "display_name": "Nose",
+                    "damage_max": 600,
+                    "children": [
+                      {
+                        "name": "Canopy",
+                        "display_name": "Canopy",
+                        "damage_max": 100,
+                        "children": []
+                      },
+                      {
+                        "name": "FrontWing_Left",
+                        "display_name": "Wing left (front)",
+                        "damage_max": 50,
+                        "children": []
+                      },
+                      {
+                        "name": "FrontWing_Right",
+                        "display_name": "Wing right (front)",
+                        "damage_max": 50,
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Rudder_Left",
+                    "display_name": "Rudder (left)",
+                    "damage_max": 50,
+                    "children": [
+                      {
+                        "name": "Rudder_Left_Flap",
+                        "display_name": "Rudder flap (left)",
+                        "damage_max": 50,
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "RearWingLeft",
+                    "display_name": "Wingleft (rear)",
+                    "damage_max": 50,
+                    "children": [
+                      {
+                        "name": "RearWingLeft_Flap",
+                        "display_name": "Wingleft flap (rear)",
+                        "damage_max": 50,
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "RearWingRight",
+                    "display_name": "Wingright (rear)",
+                    "damage_max": 50,
+                    "children": [
+                      {
+                        "name": "RearWingRight_Flap",
+                        "display_name": "Wingright flap (rear)",
+                        "damage_max": 50,
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Rudder_Right",
+                    "display_name": "Rudder (right)",
+                    "damage_max": 50,
+                    "children": [
+                      {
+                        "name": "Rudder_Right_Flap",
+                        "display_name": "Rudder flap (right)",
+                        "damage_max": 50,
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Belly",
+                    "display_name": "Belly",
+                    "damage_max": 240,
+                    "children": [
+                      {
+                        "name": "Belly_Wing_Right",
+                        "display_name": "Belly wing (right)",
+                        "damage_max": 150,
+                        "children": []
+                      },
+                      {
+                        "name": "Belly_Wing_Left",
+                        "display_name": "Belly wing (left)",
+                        "damage_max": 150,
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "WingRight",
+                    "display_name": "Wing (right)",
+                    "damage_max": 600,
+                    "children": [
+                      {
+                        "name": "WingRight_Tip",
+                        "display_name": "Wingtip (right)",
+                        "damage_max": 260,
+                        "children": [
+                          {
+                            "name": "WingRight_Mid_Flap",
+                            "display_name": "Wingflap (right mid)",
+                            "damage_max": 50,
+                            "children": []
+                          },
+                          {
+                            "name": "TipWing_Right_B",
+                            "display_name": "Tipwing b (right)",
+                            "damage_max": 50,
+                            "children": []
+                          },
+                          {
+                            "name": "TipWing_Right_A",
+                            "display_name": "Tipwing a (right)",
+                            "damage_max": 50,
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "WingLeft",
+                    "display_name": "Wing (left)",
+                    "damage_max": 600,
+                    "children": [
+                      {
+                        "name": "WingLeft_Tip",
+                        "display_name": "Wingtip (left)",
+                        "damage_max": 260,
+                        "children": [
+                          {
+                            "name": "WingLeft_Mid_Flap",
+                            "display_name": "Wingflap (left mid)",
+                            "damage_max": 50,
+                            "children": []
+                          },
+                          {
+                            "name": "TipWing_Left_A",
+                            "display_name": "Tipwing a (left)",
+                            "damage_max": 50,
+                            "children": []
+                          },
+                          {
+                            "name": "TipWing_Left_B",
+                            "display_name": "Tipwing b (left)",
+                            "damage_max": 50,
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "updated_at": "2025-11-26T12:53:44.000000Z",
+        "version": "4.4.0-LIVE.10753606",
+        "id": 60,
+        "chassis_id": 18,
+        "production_status": {
+          "en_EN": "flight-ready",
+          "de_DE": "Flugbereit",
+          "zh_CN": "\u53ef\u98de\u884c"
+        },
+        "production_note": {
+          "en_EN": "None",
+          "de_DE": "Keine",
+          "zh_CN": "\u65e0"
+        },
+        "size": {
+          "en_EN": "small",
+          "de_DE": "Klein",
+          "zh_CN": "\u5c0f"
+        },
+        "msrp": 90,
+        "pledge_url": "https://robertsspaceindustries.com/pledge/ships/gladius/Gladius",
+        "loaner": [],
+        "skus": [
+          {
+            "title": "Standard Edition",
+            "price": 90,
+            "available": 1,
+            "imported_at": "2024-01-07T12:54:03.000000Z"
+          }
+        ]
+      },
+      "meta": {
+        "processed_at": "2025-12-27 16:33:09",
+        "valid_relations": [
+          "shops",
+          "parts",
+          "hardpoints",
+          "components"
+        ]
+      }
+    },
+    {
+      "data": {
+        "uuid": "eaeb562d-d4ac-43bd-a843-e8a6d69fad82",
+        "name": "Arrow",
+        "slug": "arrow",
+        "class_name": "ANVL_Arrow",
+        "sizes": {
+          "length": 17.25,
+          "beam": 12.25,
+          "height": 4.5
+        },
+        "emission": {
+          "ir": 6050,
+          "em_idle": 5043,
+          "em_max": 20385
+        },
+        "mass": 30510,
+        "cargo_capacity": 0,
+        "cargo_grids": [],
+        "cargo_limits": {
+          "min_size": null,
+          "max_size": null
+        },
+        "vehicle_inventory": 0.86,
+        "personal_inventory": 0,
+        "crew": {
+          "min": 1,
+          "max": null,
+          "weapon": 0,
+          "operation": null
+        },
+        "health": 8580,
+        "shield_hp": 1730,
+        "shield_face_type": "Bubble",
+        "speed": {
+          "scm": 229,
+          "max": 1215,
+          "scm_boost_forward": 515,
+          "scm_boost_backward": 265,
+          "zero_to_scm": 1.532,
+          "zero_to_max": 8.129,
+          "scm_to_zero": 4.596,
+          "max_to_zero": 24.387
+        },
+        "afterburner": {
+          "pitch_boost_multiplier": 1.2,
+          "roll_boost_multiplier": 1.2,
+          "yaw_boost_multiplier": 1.2,
+          "capacitor": 20,
+          "idle_cost": 1,
+          "linear_cost": 0,
+          "angular_cost": 0,
+          "regen_per_sec": 0.75,
+          "regen_delay_after_use": 0.2,
+          "pre_delay_time": 0,
+          "ramp_up_time": 0.6,
+          "ramp_down_time": 0.2
+        },
+        "fuel": {
+          "capacity": 7.5,
+          "intake_rate": 0,
+          "usage": {
+            "main": 30,
+            "maneuvering": 11,
+            "retro": 10,
+            "vtol": 0
+          }
+        },
+        "quantum": {
+          "quantum_speed": 190000000,
+          "quantum_spool_time": 4,
+          "quantum_fuel_capacity": 1.1,
+          "quantum_range": 59076262.083780885
+        },
+        "agility": {
+          "pitch": 75,
+          "yaw": 57,
+          "roll": 205,
+          "acceleration": {
+            "main": 149.459,
+            "retro": 49.819,
+            "vtol": 0,
+            "maneuvering": 116.289,
+            "main_g": 15.24,
+            "retro_g": 5.08,
+            "vtol_g": 0,
+            "maneuvering_g": 11.858
+          }
+        },
+        "armor": {
+          "signal_infrared": 1,
+          "signal_electromagnetic": 1,
+          "signal_cross_section": 1,
+          "damage_physical": 0.65,
+          "damage_energy": 1,
+          "damage_distortion": 1,
+          "damage_thermal": 1,
+          "damage_biochemical": 1,
+          "damage_stun": 0
+        },
+        "foci": [
+          {
+            "en_EN": "Light Fighter",
+            "de_DE": "Leichter J\u00e4ger",
+            "zh_CN": "\u8f7b\u578b\u6218\u6597\u673a"
+          }
+        ],
+        "type": {
+          "en_EN": "combat",
+          "de_DE": "Gefecht",
+          "zh_CN": "\u6253\u51fb"
+        },
+        "description": {
+          "en_EN": "Meet Anvil's \u2018light fighter of the future\u2019. Featuring an ultra-aerodynamic frame, slight profile, and the most advanced manoeuvring thruster tech available, it\u2019s the most agile ship in its class. It can also hold its own in a knock-down-drag-out thanks to a generous standard weapons package that includes quad missile racks and a full complement of countermeasures. The Arrow is designed specifically to leave would-be interlopers thoroughly bewildered. After all, how can they kill what they can't catch?",
+          "de_DE": "Lernen Sie Anvils \"leichten K\u00e4mpfer der Zukunft\" kennen. Mit einem ultra-aerodynamischen Rahmen, einem leichten Profil und der fortschrittlichsten Man\u00f6vriertriebwerkstechnologie ist es das agilste Schiff seiner Klasse. Dank eines gro\u00dfz\u00fcgigen Standardwaffenpakets, das vier Raketenhalterungen und eine ganze Reihe von Gegenma\u00dfnahmen umfasst, kann es sich auch im Falle eines Knock-Down-Dragouts behaupten. Die Arrow wurde speziell entwickelt, um M\u00f6chtegern-Interlopers v\u00f6llig verwirrt zu lassen. Schlie\u00dflich, wie k\u00f6nnen sie etwas t\u00f6ten, was sie nicht erwischen k\u00f6nnen?",
+          "zh_CN": "\u8ba4\u8bc6\u4e00\u4e0b Anvil \u7684 \u201c\u672a\u6765\u8f7b\u578b\u6218\u6597\u673a\u201d\u3002\u5b83\u91c7\u7528\u4e86\u8d85\u7a7a\u6c14\u52a8\u529b\u5b66\u6846\u67b6\u3001\u8f7b\u5de7\u7684\u5916\u5f62\u548c\u6700\u5148\u8fdb\u7684\u64cd\u7eb5\u63a8\u8fdb\u5668\u6280\u672f\uff0c\u662f\u540c\u7ea7\u522b\u4e2d\u6700\u7075\u6d3b\u7684\u6218\u8230\u3002\u7531\u4e8e\u914d\u5907\u4e86\u5305\u62ec\u56db\u8054\u88c5\u5bfc\u5f39\u53d1\u5c04\u67b6\u548c\u5168\u5957\u53cd\u5bfc\u7cfb\u7edf\u5728\u5185\u7684\u4e30\u5bcc\u7684\u6807\u51c6\u6b66\u5668\u5305\uff0c\u5b83\u8fd8\u80fd\u5728\u51fb\u843d-\u62d6\u62fd\u5bf9\u6297\u4e2d\u4fdd\u6301\u81ea\u5df1\u7684\u4f18\u52bf\u3002\u7bad \"\u53f7\u7684\u8bbe\u8ba1\u76ee\u7684\u5c31\u662f\u8ba9\u6f5c\u5728\u7684\u5165\u4fb5\u8005\u65e0\u6240\u9002\u4ece\u3002\u6bd5\u7adf\uff0c\u4ed6\u4eec\u600e\u4e48\u80fd\u6740\u6b7b\u81ea\u5df1\u6293\u4e0d\u5230\u7684\u4e1c\u897f\u5462\uff1f"
+        },
+        "size_class": 2,
+        "manufacturer": {
+          "name": "Anvil Aerospace",
+          "code": "ANVL"
+        },
+        "insurance": {
+          "claim_time": 5.27,
+          "expedite_time": 1.76,
+          "expedite_cost": 3121
+        },
+        "parts": [
+          {
+            "name": "ANVL_Arrow",
+            "display_name": "Anvl arrow",
+            "damage_max": 0,
+            "children": [
+              {
+                "name": "body",
+                "display_name": "Body",
+                "damage_max": 1950,
+                "children": [
+                  {
+                    "name": "stabilizer_right",
+                    "display_name": "Stabilizer (right)",
+                    "damage_max": 800,
+                    "children": []
+                  },
+                  {
+                    "name": "stabilizer_left",
+                    "display_name": "Stabilizer (left)",
+                    "damage_max": 800,
+                    "children": []
+                  },
+                  {
+                    "name": "wing_right",
+                    "display_name": "Wing (right)",
+                    "damage_max": 1500,
+                    "children": []
+                  },
+                  {
+                    "name": "wing_left",
+                    "display_name": "Wing (left)",
+                    "damage_max": 1500,
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "nose",
+                "display_name": "Nose",
+                "damage_max": 1950,
+                "children": [
+                  {
+                    "name": "canopy",
+                    "display_name": "Canopy",
+                    "damage_max": 80,
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "updated_at": "2025-09-24T05:45:24.000000Z",
+        "version": "4.4.0-LIVE.10753606",
+        "id": 173,
+        "chassis_id": 70,
+        "production_status": {
+          "en_EN": "flight-ready",
+          "de_DE": "Flugbereit",
+          "zh_CN": "\u53ef\u98de\u884c"
+        },
+        "production_note": {
+          "en_EN": "None",
+          "de_DE": "Keine",
+          "zh_CN": "\u65e0"
+        },
+        "size": {
+          "en_EN": "small",
+          "de_DE": "Klein",
+          "zh_CN": "\u5c0f"
+        },
+        "msrp": 75,
+        "pledge_url": "https://robertsspaceindustries.com/pledge/ships/anvil-arrow/Arrow",
+        "loaner": [],
+        "skus": [
+          {
+            "title": "Standard Edition",
+            "price": 75,
+            "available": 1,
+            "imported_at": "2024-01-07T12:54:04.000000Z"
+          },
+          {
+            "title": "Imperator Subscribers Edition",
+            "price": 75,
+            "available": 1,
+            "imported_at": "2024-02-06T23:00:14.000000Z"
+          },
+          {
+            "title": "Centurion Subscribers Edition",
+            "price": 75,
+            "available": 1,
+            "imported_at": "2024-02-06T23:00:14.000000Z"
+          }
+        ]
+      },
+      "meta": {
+        "processed_at": "2025-12-27 16:33:12",
+        "valid_relations": [
+          "shops",
+          "parts",
+          "hardpoints",
+          "components"
+        ]
+      }
+    },
+    {
+      "data": {
+        "uuid": "17276ad3-7636-40b8-969a-877a2b439b37",
+        "name": "Sabre",
+        "slug": "sabre",
+        "class_name": "AEGS_Sabre",
+        "sizes": {
+          "length": 24.5,
+          "beam": 24.5,
+          "height": 5
+        },
+        "emission": {
+          "ir": 7932,
+          "em_idle": 6133,
+          "em_max": 20813
+        },
+        "mass": 83093,
+        "cargo_capacity": 0,
+        "cargo_grids": [],
+        "cargo_limits": {
+          "min_size": null,
+          "max_size": null
+        },
+        "vehicle_inventory": 1.3,
+        "personal_inventory": 0,
+        "crew": {
+          "min": 1,
+          "max": null,
+          "weapon": 0,
+          "operation": null
+        },
+        "health": 37000,
+        "shield_hp": 2100,
+        "shield_face_type": "Bubble",
+        "speed": {
+          "scm": 223,
+          "max": 1235,
+          "scm_boost_forward": 480,
+          "scm_boost_backward": 230,
+          "zero_to_scm": 2.105,
+          "zero_to_max": 11.661,
+          "scm_to_zero": 10.294,
+          "max_to_zero": 57.01
+        },
+        "afterburner": {
+          "pitch_boost_multiplier": 1.2,
+          "roll_boost_multiplier": 1.2,
+          "yaw_boost_multiplier": 1.2,
+          "capacitor": 20,
+          "idle_cost": 1,
+          "linear_cost": 0,
+          "angular_cost": 0,
+          "regen_per_sec": 0.75,
+          "regen_delay_after_use": 0.5,
+          "pre_delay_time": 0,
+          "ramp_up_time": 0.6,
+          "ramp_down_time": 0.2
+        },
+        "fuel": {
+          "capacity": 13.5,
+          "intake_rate": 0,
+          "usage": {
+            "main": 81,
+            "maneuvering": 18,
+            "retro": 7,
+            "vtol": 0
+          }
+        },
+        "quantum": {
+          "quantum_speed": 140000000,
+          "quantum_spool_time": 4,
+          "quantum_fuel_capacity": 1.3,
+          "quantum_range": 78031212.484994
+        },
+        "agility": {
+          "pitch": 62,
+          "yaw": 48,
+          "roll": 160,
+          "acceleration": {
+            "main": 105.905,
+            "retro": 21.662,
+            "vtol": 0,
+            "maneuvering": 68.901,
+            "main_g": 10.799,
+            "retro_g": 2.208,
+            "vtol_g": 0,
+            "maneuvering_g": 7.025
+          }
+        },
+        "armor": {
+          "signal_infrared": 0.6,
+          "signal_electromagnetic": 0.6,
+          "signal_cross_section": 0.6,
+          "damage_physical": 0.62,
+          "damage_energy": 1,
+          "damage_distortion": 1,
+          "damage_thermal": 1,
+          "damage_biochemical": 1,
+          "damage_stun": 0
+        },
+        "foci": [
+          {
+            "en_EN": "Stealth Fighter",
+            "de_DE": "Tarnkappenj\u00e4ger",
+            "zh_CN": "\u9690\u5f62\u6218\u6597\u673a"
+          }
+        ],
+        "type": {
+          "en_EN": "combat",
+          "de_DE": "Gefecht",
+          "zh_CN": "\u6253\u51fb"
+        },
+        "description": {
+          "en_EN": "Part of Aegis Dynamics\u2019 Phase Two of new ship models, the Sabre was designed as a space superiority fighter for those situations where you need to leave a lighter footprint. Designed to be a rapid responder, the Sabre is more than capable of establishing battlefield dominance for any number of combat scenarios.",
+          "de_DE": "Als Teil von Aegis Dynamics' Phase Zwei der neuen Schiffsmodelle wurde die Sabre als Raum\u00fcberlegenheitsj\u00e4ger f\u00fcr Situationen entwickelt, in denen Sie einen leichteren Fu\u00dfabdruck hinterlassen m\u00fcssen. Die Sabre wurde als schneller Helfer entwickelt und ist mehr als in der Lage, die Dominanz auf dem Schlachtfeld f\u00fcr eine Vielzahl von Kampfszenarien zu etablieren.",
+          "zh_CN": "\u4f5c\u4e3a\u5b99\u65af\u76fe\u52a8\u529b\u516c\u53f8\uff08Aegis Dynamics\uff09\u7b2c\u4e8c\u9636\u6bb5\u65b0\u578b\u8230\u8247\u7684\u4e00\u90e8\u5206\uff0c\u201c\u4f69\u5200 \u201d\u53f7\u88ab\u8bbe\u8ba1\u4e3a\u7a7a\u95f4\u4f18\u52bf\u6218\u6597\u673a\uff0c\u9002\u7528\u4e8e\u9700\u8981\u7559\u4e0b\u8f83\u8f7b\u8db3\u8ff9\u7684\u60c5\u51b5\u3002\u4f5c\u4e3a\u5feb\u901f\u53cd\u5e94\u578b\u6218\u6597\u673a\uff0c\u201c\u4f69\u5200 \u201d\u80fd\u5728\u5404\u79cd\u6218\u6597\u60c5\u51b5\u4e0b\u5efa\u7acb\u6218\u573a\u4f18\u52bf\u3002"
+        },
+        "size_class": 2,
+        "manufacturer": {
+          "name": "Aegis Dynamics",
+          "code": "AEGS"
+        },
+        "insurance": {
+          "claim_time": 9.45,
+          "expedite_time": 3.15,
+          "expedite_cost": 4689
+        },
+        "parts": [
+          {
+            "name": "AEGS_Sabre",
+            "display_name": "Aegs sabre",
+            "damage_max": 0,
+            "children": [
+              {
+                "name": "Body",
+                "display_name": "Body",
+                "damage_max": 4000,
+                "children": [
+                  {
+                    "name": "Front_Wing_Right",
+                    "display_name": "Wing right (front)",
+                    "damage_max": 2000,
+                    "children": [
+                      {
+                        "name": "Wing_Right",
+                        "display_name": "Wing (right)",
+                        "damage_max": 2000,
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Front_Wing_Left",
+                    "display_name": "Wing left (front)",
+                    "damage_max": 2000,
+                    "children": [
+                      {
+                        "name": "Wing_Left",
+                        "display_name": "Wing (left)",
+                        "damage_max": 2000,
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "hardpoint_weapon_missilerack_left",
+                    "display_name": "Hardpoint weapon missilerack (left)",
+                    "damage_max": 1000,
+                    "children": []
+                  },
+                  {
+                    "name": "hardpoint_weapon_missilerack_right",
+                    "display_name": "Hardpoint weapon missilerack (right)",
+                    "damage_max": 1000,
+                    "children": []
+                  },
+                  {
+                    "name": "hardpoint_engine_right",
+                    "display_name": "Hardpoint engine (right)",
+                    "damage_max": 1000,
+                    "children": []
+                  },
+                  {
+                    "name": "hardpoint_engine_left",
+                    "display_name": "Hardpoint engine (left)",
+                    "damage_max": 1000,
+                    "children": []
+                  },
+                  {
+                    "name": "Rear_Wing_Right",
+                    "display_name": "Wing right (rear)",
+                    "damage_max": 2000,
+                    "children": []
+                  },
+                  {
+                    "name": "Rear_Wing_Left",
+                    "display_name": "Wing left (rear)",
+                    "damage_max": 2000,
+                    "children": []
+                  },
+                  {
+                    "name": "hardpoint_thruster_topRL",
+                    "display_name": "Hardpoint thruster rl (top)",
+                    "damage_max": 1000,
+                    "children": []
+                  },
+                  {
+                    "name": "hardpoint_thruster_topRR",
+                    "display_name": "Hardpoint thruster rr (top)",
+                    "damage_max": 1000,
+                    "children": []
+                  },
+                  {
+                    "name": "hardpoint_thruster_topFR",
+                    "display_name": "Hardpoint thruster fr (top)",
+                    "damage_max": 1000,
+                    "children": []
+                  },
+                  {
+                    "name": "hardpoint_thruster_topFL",
+                    "display_name": "Hardpoint thruster fl (top)",
+                    "damage_max": 1000,
+                    "children": []
+                  },
+                  {
+                    "name": "hardpoint_thruster_bottomFR",
+                    "display_name": "Hardpoint thruster fr (bottom)",
+                    "damage_max": 1000,
+                    "children": []
+                  },
+                  {
+                    "name": "hardpoint_thruster_bottomFL",
+                    "display_name": "Hardpoint thruster fl (bottom)",
+                    "damage_max": 1000,
+                    "children": []
+                  },
+                  {
+                    "name": "hardpoint_thruster_retro_right",
+                    "display_name": "Hardpoint thruster retro (right)",
+                    "damage_max": 1000,
+                    "children": []
+                  },
+                  {
+                    "name": "hardpoint_thruster_retro_left",
+                    "display_name": "Hardpoint thruster retro (left)",
+                    "damage_max": 1000,
+                    "children": []
+                  },
+                  {
+                    "name": "bay_door_r_a",
+                    "display_name": "Bay door r a",
+                    "damage_max": 500,
+                    "children": [
+                      {
+                        "name": "bay_door_r_b",
+                        "display_name": "Bay door r b",
+                        "damage_max": 500,
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "bay_door_l_a",
+                    "display_name": "Bay door l a",
+                    "damage_max": 500,
+                    "children": [
+                      {
+                        "name": "bay_door_l_b",
+                        "display_name": "Bay door l b",
+                        "damage_max": 500,
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "hardpoint_thruster_bottomRL",
+                    "display_name": "Hardpoint thruster rl (bottom)",
+                    "damage_max": 1000,
+                    "children": []
+                  },
+                  {
+                    "name": "hardpoint_thruster_bottomRR",
+                    "display_name": "Hardpoint thruster rr (bottom)",
+                    "damage_max": 1000,
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "Nose",
+                "display_name": "Nose",
+                "damage_max": 4000,
+                "children": [
+                  {
+                    "name": "canopy",
+                    "display_name": "Canopy",
+                    "damage_max": 1000,
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "updated_at": "2025-11-26T12:58:44.000000Z",
+        "version": "4.4.0-LIVE.10753606",
+        "id": 98,
+        "chassis_id": 35,
+        "production_status": {
+          "en_EN": "flight-ready",
+          "de_DE": "Flugbereit",
+          "zh_CN": "\u53ef\u98de\u884c"
+        },
+        "production_note": {
+          "en_EN": "Flight Ready",
+          "de_DE": "Flugbereit",
+          "zh_CN": "\u98de\u884c\u51c6\u5907"
+        },
+        "size": {
+          "en_EN": "small",
+          "de_DE": "Klein",
+          "zh_CN": "\u5c0f"
+        },
+        "msrp": 175,
+        "pledge_url": "https://robertsspaceindustries.com/pledge/ships/sabre/Sabre",
+        "loaner": [],
+        "skus": [
+          {
+            "title": "Warbond Edition",
+            "price": 160,
+            "available": 1,
+            "imported_at": "2024-01-09T23:00:58.000000Z"
+          },
+          {
+            "title": "Standard Edition",
+            "price": 170,
+            "available": 1,
+            "imported_at": "2024-01-09T23:00:58.000000Z"
+          },
+          {
+            "title": "Standard Edition",
+            "price": 175,
+            "available": 1,
+            "imported_at": "2024-11-23T23:00:56.000000Z"
+          }
+        ]
+      },
+      "meta": {
+        "processed_at": "2025-12-27 16:33:14",
+        "valid_relations": [
+          "shops",
+          "parts",
+          "hardpoints",
+          "components"
+        ]
+      }
+    }
+  ]
+}

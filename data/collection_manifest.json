@@ -1,0 +1,782 @@
+{
+  "total_ships": 116,
+  "successful": 116,
+  "failed": 0,
+  "success_rate": 100.0,
+  "successful_ships": [
+    {
+      "slug": "100i",
+      "name": "100i",
+      "manufacturer": "Origin Jumpworks",
+      "cargo": 2
+    },
+    {
+      "slug": "125a",
+      "name": "125a",
+      "manufacturer": "Origin Jumpworks",
+      "cargo": 2
+    },
+    {
+      "slug": "135c",
+      "name": "135c",
+      "manufacturer": "Origin Jumpworks",
+      "cargo": 0
+    },
+    {
+      "slug": "300i",
+      "name": "300i",
+      "manufacturer": "Origin Jumpworks",
+      "cargo": 8
+    },
+    {
+      "slug": "315p",
+      "name": "315p",
+      "manufacturer": "Origin Jumpworks",
+      "cargo": 12
+    },
+    {
+      "slug": "325a",
+      "name": "325a",
+      "manufacturer": "Origin Jumpworks",
+      "cargo": 4
+    },
+    {
+      "slug": "350r",
+      "name": "350r",
+      "manufacturer": "Origin Jumpworks",
+      "cargo": 4
+    },
+    {
+      "slug": "400i",
+      "name": "400i",
+      "manufacturer": "Origin Jumpworks",
+      "cargo": 42
+    },
+    {
+      "slug": "600i",
+      "name": "600i Explorer",
+      "manufacturer": "Origin Jumpworks",
+      "cargo": 44
+    },
+    {
+      "slug": "600i-explorer",
+      "name": "600i Explorer",
+      "manufacturer": "Origin Jumpworks",
+      "cargo": 40
+    },
+    {
+      "slug": "85x",
+      "name": "85X",
+      "manufacturer": "Origin Jumpworks",
+      "cargo": 0
+    },
+    {
+      "slug": "890-jump",
+      "name": "890 Jump",
+      "manufacturer": "Origin Jumpworks",
+      "cargo": 388
+    },
+    {
+      "slug": "a2-hercules",
+      "name": "A2 Hercules",
+      "manufacturer": "Crusader Industries",
+      "cargo": 234
+    },
+    {
+      "slug": "ares-inferno",
+      "name": "Ares Inferno",
+      "manufacturer": "Crusader Industries",
+      "cargo": 0
+    },
+    {
+      "slug": "ares-ion",
+      "name": "Ares Ion",
+      "manufacturer": "Crusader Industries",
+      "cargo": 0
+    },
+    {
+      "slug": "arrow",
+      "name": "Arrow",
+      "manufacturer": "Anvil Aerospace",
+      "cargo": 0
+    },
+    {
+      "slug": "aurora-cl",
+      "name": "Aurora CL",
+      "manufacturer": "Roberts Space Industries",
+      "cargo": 6
+    },
+    {
+      "slug": "aurora-es",
+      "name": "Aurora ES",
+      "manufacturer": "Roberts Space Industries",
+      "cargo": 3
+    },
+    {
+      "slug": "aurora-ln",
+      "name": "Aurora LN",
+      "manufacturer": "Roberts Space Industries",
+      "cargo": 3
+    },
+    {
+      "slug": "aurora-lx",
+      "name": "Aurora LX",
+      "manufacturer": "Roberts Space Industries",
+      "cargo": 3
+    },
+    {
+      "slug": "aurora-mr",
+      "name": "Aurora MR",
+      "manufacturer": "Roberts Space Industries",
+      "cargo": 2
+    },
+    {
+      "slug": "avenger-stalker",
+      "name": "Avenger Stalker",
+      "manufacturer": "Aegis Dynamics",
+      "cargo": 0
+    },
+    {
+      "slug": "avenger-titan",
+      "name": "Avenger Titan",
+      "manufacturer": "Aegis Dynamics",
+      "cargo": 8
+    },
+    {
+      "slug": "avenger-warlock",
+      "name": "Avenger Warlock",
+      "manufacturer": "Aegis Dynamics",
+      "cargo": 0
+    },
+    {
+      "slug": "ballista",
+      "name": "Ballista",
+      "manufacturer": "Anvil Aerospace",
+      "cargo": 0
+    },
+    {
+      "slug": "blade",
+      "name": "Blade",
+      "manufacturer": "Esperia",
+      "cargo": 0
+    },
+    {
+      "slug": "buccaneer",
+      "name": "Buccaneer",
+      "manufacturer": "Drake Interplanetary",
+      "cargo": 0
+    },
+    {
+      "slug": "c2-hercules",
+      "name": "C2 Hercules",
+      "manufacturer": "Crusader Industries",
+      "cargo": 696
+    },
+    {
+      "slug": "carrack",
+      "name": "Carrack",
+      "manufacturer": "Anvil Aerospace",
+      "cargo": 456
+    },
+    {
+      "slug": "caterpillar",
+      "name": "Caterpillar",
+      "manufacturer": "Drake Interplanetary",
+      "cargo": 576
+    },
+    {
+      "slug": "constellation-andromeda",
+      "name": "Constellation Andromeda",
+      "manufacturer": "Roberts Space Industries",
+      "cargo": 96
+    },
+    {
+      "slug": "constellation-aquila",
+      "name": "Constellation Aquila",
+      "manufacturer": "Roberts Space Industries",
+      "cargo": 96
+    },
+    {
+      "slug": "constellation-phoenix",
+      "name": "Constellation Phoenix",
+      "manufacturer": "Roberts Space Industries",
+      "cargo": 80
+    },
+    {
+      "slug": "constellation-taurus",
+      "name": "Constellation Taurus",
+      "manufacturer": "Roberts Space Industries",
+      "cargo": 174
+    },
+    {
+      "slug": "corsair",
+      "name": "Corsair",
+      "manufacturer": "Drake Interplanetary",
+      "cargo": 72
+    },
+    {
+      "slug": "crucible",
+      "name": "Crucible",
+      "manufacturer": "Anvil Aerospace",
+      "cargo": 240
+    },
+    {
+      "slug": "cutlass-black",
+      "name": "Cutlass Black",
+      "manufacturer": "Drake Interplanetary",
+      "cargo": 46
+    },
+    {
+      "slug": "cutlass-blue",
+      "name": "Cutlass Blue",
+      "manufacturer": "Drake Interplanetary",
+      "cargo": 12
+    },
+    {
+      "slug": "cutlass-red",
+      "name": "Cutlass Red",
+      "manufacturer": "Drake Interplanetary",
+      "cargo": 12
+    },
+    {
+      "slug": "cyclone",
+      "name": "Cyclone",
+      "manufacturer": "Tumbril Land Systems",
+      "cargo": 1
+    },
+    {
+      "slug": "cyclone-aa",
+      "name": "Cyclone AA",
+      "manufacturer": "Tumbril",
+      "cargo": 0
+    },
+    {
+      "slug": "cyclone-rc",
+      "name": "Cyclone RC",
+      "manufacturer": "Tumbril",
+      "cargo": 0
+    },
+    {
+      "slug": "cyclone-rn",
+      "name": "Cyclone RN",
+      "manufacturer": "Tumbril",
+      "cargo": 0
+    },
+    {
+      "slug": "cyclone-tr",
+      "name": "Cyclone TR",
+      "manufacturer": "Tumbril",
+      "cargo": 0
+    },
+    {
+      "slug": "defender",
+      "name": "Defender",
+      "manufacturer": "Banu",
+      "cargo": 0
+    },
+    {
+      "slug": "dragonfly",
+      "name": "Dragonfly Black",
+      "manufacturer": "Drake Interplanetary",
+      "cargo": 0
+    },
+    {
+      "slug": "eclipse",
+      "name": "Eclipse",
+      "manufacturer": "Aegis Dynamics",
+      "cargo": 0
+    },
+    {
+      "slug": "endeavor",
+      "name": "Endeavor",
+      "manufacturer": "MISC",
+      "cargo": 500
+    },
+    {
+      "slug": "freelancer",
+      "name": "Freelancer",
+      "manufacturer": "Musashi Industrial and Starflight Concern",
+      "cargo": 66
+    },
+    {
+      "slug": "freelancer-dur",
+      "name": "Freelancer DUR",
+      "manufacturer": "MISC",
+      "cargo": 36
+    },
+    {
+      "slug": "freelancer-max",
+      "name": "Freelancer MAX",
+      "manufacturer": "MISC",
+      "cargo": 120
+    },
+    {
+      "slug": "freelancer-mis",
+      "name": "Freelancer MIS",
+      "manufacturer": "MISC",
+      "cargo": 36
+    },
+    {
+      "slug": "genesis",
+      "name": "Genesis",
+      "manufacturer": "Crusader Industries",
+      "cargo": 0
+    },
+    {
+      "slug": "gladius",
+      "name": "Gladius",
+      "manufacturer": "Aegis Dynamics",
+      "cargo": 0
+    },
+    {
+      "slug": "glaive",
+      "name": "Glaive",
+      "manufacturer": "Esperia",
+      "cargo": 0
+    },
+    {
+      "slug": "hammerhead",
+      "name": "Hammerhead",
+      "manufacturer": "Aegis Dynamics",
+      "cargo": 0
+    },
+    {
+      "slug": "hawk",
+      "name": "Hawk",
+      "manufacturer": "Anvil Aerospace",
+      "cargo": 0
+    },
+    {
+      "slug": "herald",
+      "name": "Herald",
+      "manufacturer": "Drake Interplanetary",
+      "cargo": 0
+    },
+    {
+      "slug": "hull-a",
+      "name": "Hull A",
+      "manufacturer": "MISC",
+      "cargo": 64
+    },
+    {
+      "slug": "hull-b",
+      "name": "Hull B",
+      "manufacturer": "MISC",
+      "cargo": 512
+    },
+    {
+      "slug": "hull-c",
+      "name": "Hull C",
+      "manufacturer": "MISC",
+      "cargo": 4608
+    },
+    {
+      "slug": "hull-d",
+      "name": "Hull D",
+      "manufacturer": "MISC",
+      "cargo": 6912
+    },
+    {
+      "slug": "hull-e",
+      "name": "Hull E",
+      "manufacturer": "MISC",
+      "cargo": 12288
+    },
+    {
+      "slug": "hurricane",
+      "name": "Hurricane",
+      "manufacturer": "Anvil Aerospace",
+      "cargo": 0
+    },
+    {
+      "slug": "javelin",
+      "name": "Javelin",
+      "manufacturer": "Aegis Dynamics",
+      "cargo": 0
+    },
+    {
+      "slug": "kraken",
+      "name": "Kraken",
+      "manufacturer": "Drake Interplanetary",
+      "cargo": 3792
+    },
+    {
+      "slug": "kraken-privateer",
+      "name": "Kraken Privateer",
+      "manufacturer": "Drake Interplanetary",
+      "cargo": 768
+    },
+    {
+      "slug": "m2-hercules",
+      "name": "M2 Hercules",
+      "manufacturer": "Crusader Industries",
+      "cargo": 468
+    },
+    {
+      "slug": "m50",
+      "name": "M50",
+      "manufacturer": "Origin Jumpworks",
+      "cargo": 0
+    },
+    {
+      "slug": "mantis",
+      "name": "Mantis",
+      "manufacturer": "Roberts Space Industries",
+      "cargo": 0
+    },
+    {
+      "slug": "merchantman",
+      "name": "Merchantman",
+      "manufacturer": "Banu",
+      "cargo": 2880
+    },
+    {
+      "slug": "mercury",
+      "name": "Mercury",
+      "manufacturer": "Crusader Industries",
+      "cargo": 114
+    },
+    {
+      "slug": "mole",
+      "name": "MOLE",
+      "manufacturer": "Argo Astronautics",
+      "cargo": 96
+    },
+    {
+      "slug": "mpuv-cargo",
+      "name": "MPUV Cargo",
+      "manufacturer": "Argo Astronautics",
+      "cargo": 2
+    },
+    {
+      "slug": "mpuv-personnel",
+      "name": "MPUV Personnel",
+      "manufacturer": "Argo Astronautics",
+      "cargo": 0
+    },
+    {
+      "slug": "mustang-alpha",
+      "name": "Mustang Alpha",
+      "manufacturer": "Consolidated Outland",
+      "cargo": 4
+    },
+    {
+      "slug": "mustang-beta",
+      "name": "Mustang Beta",
+      "manufacturer": "Consolidated Outland",
+      "cargo": 0
+    },
+    {
+      "slug": "mustang-delta",
+      "name": "Mustang Delta",
+      "manufacturer": "Consolidated Outland",
+      "cargo": 0
+    },
+    {
+      "slug": "mustang-gamma",
+      "name": "Mustang Gamma",
+      "manufacturer": "Consolidated Outland",
+      "cargo": 0
+    },
+    {
+      "slug": "mustang-omega",
+      "name": "Mustang Omega",
+      "manufacturer": "Consolidated Outland",
+      "cargo": 0
+    },
+    {
+      "slug": "nautilus",
+      "name": "Nautilus",
+      "manufacturer": "Aegis Dynamics",
+      "cargo": 64
+    },
+    {
+      "slug": "nomad",
+      "name": "Nomad",
+      "manufacturer": "Consolidated Outland",
+      "cargo": 0
+    },
+    {
+      "slug": "nova",
+      "name": "Nova",
+      "manufacturer": "Tumbril Land Systems",
+      "cargo": 0
+    },
+    {
+      "slug": "odyssey",
+      "name": "Odyssey",
+      "manufacturer": "MISC",
+      "cargo": 252
+    },
+    {
+      "slug": "orion",
+      "name": "Orion",
+      "manufacturer": "Roberts Space Industries",
+      "cargo": 384
+    },
+    {
+      "slug": "p-52-merlin",
+      "name": "P-52 Merlin",
+      "manufacturer": "Kruger Intergalactic",
+      "cargo": 0
+    },
+    {
+      "slug": "p-72-archimedes",
+      "name": "P-72 Archimedes",
+      "manufacturer": "Kruger Intergalactic",
+      "cargo": 0
+    },
+    {
+      "slug": "polaris",
+      "name": "Polaris",
+      "manufacturer": "Roberts Space Industries",
+      "cargo": 576
+    },
+    {
+      "slug": "prospector",
+      "name": "Prospector",
+      "manufacturer": "Musashi Industrial and Starflight Concern",
+      "cargo": 32
+    },
+    {
+      "slug": "prowler",
+      "name": "Prowler",
+      "manufacturer": "Esperia",
+      "cargo": 0
+    },
+    {
+      "slug": "raft",
+      "name": "RAFT",
+      "manufacturer": "Argo Astronautics",
+      "cargo": 192
+    },
+    {
+      "slug": "razor",
+      "name": "Razor",
+      "manufacturer": "Mirai",
+      "cargo": 0
+    },
+    {
+      "slug": "razor-ex",
+      "name": "Razor EX",
+      "manufacturer": "Mirai",
+      "cargo": 0
+    },
+    {
+      "slug": "razor-lx",
+      "name": "Razor LX",
+      "manufacturer": "Mirai",
+      "cargo": 0
+    },
+    {
+      "slug": "reclaimer",
+      "name": "Reclaimer",
+      "manufacturer": "Aegis Dynamics",
+      "cargo": 420
+    },
+    {
+      "slug": "redeemer",
+      "name": "Redeemer",
+      "manufacturer": "Aegis Dynamics",
+      "cargo": 2
+    },
+    {
+      "slug": "reliant-kore",
+      "name": "Reliant Kore",
+      "manufacturer": "MISC",
+      "cargo": 6
+    },
+    {
+      "slug": "reliant-mako",
+      "name": "Reliant Mako",
+      "manufacturer": "MISC",
+      "cargo": 0
+    },
+    {
+      "slug": "reliant-sen",
+      "name": "Reliant Sen",
+      "manufacturer": "MISC",
+      "cargo": 0
+    },
+    {
+      "slug": "reliant-tana",
+      "name": "Reliant Tana",
+      "manufacturer": "MISC",
+      "cargo": 0
+    },
+    {
+      "slug": "retaliator",
+      "name": "Retaliator Bomber",
+      "manufacturer": "Aegis Dynamics",
+      "cargo": 0
+    },
+    {
+      "slug": "sabre",
+      "name": "Sabre",
+      "manufacturer": "Aegis Dynamics",
+      "cargo": 0
+    },
+    {
+      "slug": "sabre-comet",
+      "name": "Sabre Comet",
+      "manufacturer": "Aegis Dynamics",
+      "cargo": 0
+    },
+    {
+      "slug": "scythe",
+      "name": "Scythe",
+      "manufacturer": "Vanduul",
+      "cargo": 0
+    },
+    {
+      "slug": "srv",
+      "name": "SRV",
+      "manufacturer": "Argo Astronautics",
+      "cargo": 12
+    },
+    {
+      "slug": "starfarer",
+      "name": "Starfarer",
+      "manufacturer": "Musashi Industrial and Starflight Concern",
+      "cargo": 291
+    },
+    {
+      "slug": "starfarer-gemini",
+      "name": "Starfarer Gemini",
+      "manufacturer": "MISC",
+      "cargo": 291
+    },
+    {
+      "slug": "talon",
+      "name": "Talon",
+      "manufacturer": "Esperia",
+      "cargo": 0
+    },
+    {
+      "slug": "talon-shrike",
+      "name": "Talon Shrike",
+      "manufacturer": "Esperia",
+      "cargo": 0
+    },
+    {
+      "slug": "terrapin",
+      "name": "Terrapin",
+      "manufacturer": "Anvil Aerospace",
+      "cargo": 0
+    },
+    {
+      "slug": "valkyrie",
+      "name": "Valkyrie",
+      "manufacturer": "Anvil Aerospace",
+      "cargo": 90
+    },
+    {
+      "slug": "vanguard-harbinger",
+      "name": "Vanguard Harbinger",
+      "manufacturer": "Aegis Dynamics",
+      "cargo": 0
+    },
+    {
+      "slug": "vanguard-sentinel",
+      "name": "Vanguard Sentinel",
+      "manufacturer": "Aegis Dynamics",
+      "cargo": 0
+    },
+    {
+      "slug": "vanguard-warden",
+      "name": "Vanguard Warden",
+      "manufacturer": "Aegis Dynamics",
+      "cargo": 0
+    },
+    {
+      "slug": "vulture",
+      "name": "Vulture",
+      "manufacturer": "Drake Interplanetary",
+      "cargo": 12
+    },
+    {
+      "slug": "x1",
+      "name": "X1",
+      "manufacturer": "Origin Jumpworks",
+      "cargo": 0
+    }
+  ],
+  "failed_ships": [],
+  "completeness": {
+    "name": {
+      "present": 116,
+      "total": 116,
+      "percentage": 100.0
+    },
+    "slug": {
+      "present": 116,
+      "total": 116,
+      "percentage": 100.0
+    },
+    "cargo_capacity": {
+      "present": 116,
+      "total": 116,
+      "percentage": 100.0
+    },
+    "crew.min": {
+      "present": 112,
+      "total": 116,
+      "percentage": 96.6
+    },
+    "crew.max": {
+      "present": 65,
+      "total": 116,
+      "percentage": 56.0
+    },
+    "sizes.length": {
+      "present": 116,
+      "total": 116,
+      "percentage": 100.0
+    },
+    "sizes.beam": {
+      "present": 116,
+      "total": 116,
+      "percentage": 100.0
+    },
+    "sizes.height": {
+      "present": 116,
+      "total": 116,
+      "percentage": 100.0
+    },
+    "mass": {
+      "present": 113,
+      "total": 116,
+      "percentage": 97.4
+    },
+    "speed.scm": {
+      "present": 97,
+      "total": 116,
+      "percentage": 83.6
+    },
+    "speed.max": {
+      "present": 50,
+      "total": 116,
+      "percentage": 43.1
+    },
+    "manufacturer.name": {
+      "present": 116,
+      "total": 116,
+      "percentage": 100.0
+    },
+    "foci": {
+      "present": 116,
+      "total": 116,
+      "percentage": 100.0
+    },
+    "type": {
+      "present": 116,
+      "total": 116,
+      "percentage": 100.0
+    },
+    "description": {
+      "present": 116,
+      "total": 116,
+      "percentage": 100.0
+    }
+  }
+}
