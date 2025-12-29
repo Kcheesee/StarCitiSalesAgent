@@ -10,8 +10,7 @@ from pathlib import Path
 # Add parent directory to path
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from app.database import engine, SessionLocal
-from app.models import Base
+from app.database import engine, SessionLocal, Base
 import subprocess
 
 
