@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Conversation Transcript - StarCiti Sales Agent</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 2cm;
+            @top-center {
+                content: "Conversation Transcript";
+                font-size: 9pt;
+                color: #64748b;
+            }
+            @bottom-center {
+                content: "Page " counter(page);
+                font-size: 9pt;
+                color: #64748b;
+            }
+        }
+
+        body {
+            font-family: 'Helvetica', 'Arial', sans-serif;
+            font-size: 10pt;
+            line-height: 1.5;
+            color: #1e293b;
+        }
+
+        h1 {
+            color: #1e40af;
+            font-size: 24pt;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #3b82f6;
+        }
+
+        h2 {
+            color: #1e40af;
+            font-size: 16pt;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #cbd5e1;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #3b82f6;
+        }
+
+        .logo {
+            font-size: 28pt;
+            font-weight: bold;
+            color: #1e40af;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            font-size: 12pt;
+            color: #64748b;
+        }
+
+        .session-info {
+            background-color: #f1f5f9;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-left: 4px solid #3b82f6;
+        }
+
+        .session-info p {
+            margin: 5px 0;
+        }
+
+        .session-info strong {
+            color: #334155;
+        }
+
+        .message {
+            margin-bottom: 15px;
+            padding: 12px;
+            border-radius: 4px;
+            page-break-inside: avoid;
+        }
+
+        .message.user {
+            background-color: #dbeafe;
+            border-left: 4px solid #3b82f6;
+        }
+
+        .message.assistant {
+            background-color: #f0fdf4;
+            border-left: 4px solid #22c55e;
+        }
+
+        .message.system {
+            background-color: #fef3c7;
+            border-left: 4px solid #eab308;
+        }
+
+        .message-header {
+            display: block;
+            margin-bottom: 6px;
+            font-size: 9pt;
+        }
+
+        .message-role {
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #334155;
+        }
+
+        .message.user .message-role {
+            color: #1e40af;
+        }
+
+        .message.assistant .message-role {
+            color: #166534;
+        }
+
+        .message.system .message-role {
+            color: #854d0e;
+        }
+
+        .message-timestamp {
+            color: #64748b;
+            font-size: 8pt;
+            margin-left: 10px;
+        }
+
+        .message-content {
+            color: #1e293b;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .stats-box {
+            background-color: #f8fafc;
+            border: 1px solid #cbd5e1;
+            padding: 15px;
+            margin: 20px 0;
+            display: table;
+            width: 100%;
+        }
+
+        .stat {
+            display: table-row;
+        }
+
+        .stat-label {
+            display: table-cell;
+            font-weight: bold;
+            color: #475569;
+            padding: 4px 10px 4px 0;
+            width: 40%;
+        }
+
+        .stat-value {
+            display: table-cell;
+            color: #1e293b;
+            padding: 4px 0;
+        }
+
+        .no-messages {
+            background-color: #fef2f2;
+            border: 1px solid #fecaca;
+            border-left: 4px solid #ef4444;
+            padding: 20px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .no-messages p {
+            color: #991b1b;
+            margin: 0;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #cbd5e1;
+            font-size: 9pt;
+            color: #64748b;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="logo">⭐ StarCiti Transcript</div>
+        <div class="subtitle">Conversation Record</div>
+    </div>
+
+    <!-- Session Information -->
+    <div class="session-info">
+        <p><strong>Pilot:</strong> {{ user_name }}</p>
+        <p><strong>Email:</strong> {{ user_email }}</p>
+        <p><strong>Session ID:</strong> {{ conversation_uuid }}</p>
+        <p><strong>Started:</strong> {{ started_at }}</p>
+        <p><strong>Completed:</strong> {{ completed_at }}</p>
+        <p><strong>Generated:</strong> {{ generated_date }}</p>
+    </div>
+
+    <!-- Statistics -->
+    <h2>Session Statistics</h2>
+    <div class="stats-box">
+        <div class="stat">
+            <div class="stat-label">Total Messages:</div>
+            <div class="stat-value">{{ total_messages }}</div>
+        </div>
+        <div class="stat">
+            <div class="stat-label">Duration:</div>
+            <div class="stat-value">{{ started_at }} to {{ completed_at }}</div>
+        </div>
+    </div>
+
+    <!-- Conversation -->
+    <h2>Conversation History</h2>
+
+    {% if messages %}
+        {% for message in messages %}
+        <div class="message {{ message.role }}">
+            <span class="message-header">
+                <span class="message-role">{{ message.role }}</span>
+                {% if message.timestamp %}
+                <span class="message-timestamp">{{ message.timestamp }}</span>
+                {% endif %}
+            </span>
+            <div class="message-content">{{ message.content }}</div>
+        </div>
+        {% endfor %}
+    {% else %}
+        <div class="no-messages">
+            <p>No conversation messages recorded.</p>
+        </div>
+    {% endif %}
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>Generated by StarCiti Sales Agent powered by AI</p>
+        <p>For questions or support, contact us at {{ user_email }}</p>
+        <p style="margin-top: 10px; font-size: 8pt;">
+            This transcript is a record of your AI-powered consultation session.<br>
+            All recommendations are based on publicly available Star Citizen information.
+        </p>
+    </div>
+</body>
+</html>

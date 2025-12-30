@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fleet Composition Guide - StarCiti Sales Agent</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 2cm;
+            @top-center {
+                content: "Fleet Composition Guide";
+                font-size: 9pt;
+                color: #64748b;
+            }
+            @bottom-center {
+                content: "Page " counter(page);
+                font-size: 9pt;
+                color: #64748b;
+            }
+        }
+
+        body {
+            font-family: 'Helvetica', 'Arial', sans-serif;
+            font-size: 11pt;
+            line-height: 1.6;
+            color: #1e293b;
+        }
+
+        h1 {
+            color: #1e40af;
+            font-size: 24pt;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #3b82f6;
+        }
+
+        h2 {
+            color: #1e40af;
+            font-size: 16pt;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #cbd5e1;
+        }
+
+        h3 {
+            color: #334155;
+            font-size: 13pt;
+            margin-top: 15px;
+            margin-bottom: 8px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #3b82f6;
+        }
+
+        .logo {
+            font-size: 28pt;
+            font-weight: bold;
+            color: #1e40af;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            font-size: 12pt;
+            color: #64748b;
+        }
+
+        .user-info {
+            background-color: #f1f5f9;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-left: 4px solid #3b82f6;
+        }
+
+        .user-info p {
+            margin: 5px 0;
+        }
+
+        .user-info strong {
+            color: #334155;
+        }
+
+        .ship-card {
+            background-color: #f8fafc;
+            border: 1px solid #cbd5e1;
+            border-left: 4px solid #3b82f6;
+            padding: 15px;
+            margin-bottom: 20px;
+            page-break-inside: avoid;
+        }
+
+        .ship-header {
+            margin-bottom: 10px;
+        }
+
+        .ship-name {
+            font-size: 14pt;
+            font-weight: bold;
+            color: #1e40af;
+            margin-bottom: 3px;
+        }
+
+        .ship-manufacturer {
+            font-size: 10pt;
+            color: #64748b;
+            margin-bottom: 8px;
+        }
+
+        .ship-description {
+            color: #475569;
+            margin: 10px 0;
+            font-size: 10pt;
+        }
+
+        .ship-reason {
+            background-color: #dbeafe;
+            border-left: 3px solid #3b82f6;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 10pt;
+            font-style: italic;
+        }
+
+        .ship-specs {
+            display: table;
+            width: 100%;
+            margin-top: 10px;
+            border-collapse: collapse;
+        }
+
+        .spec-row {
+            display: table-row;
+        }
+
+        .spec-label {
+            display: table-cell;
+            font-weight: bold;
+            color: #475569;
+            padding: 4px 10px 4px 0;
+            width: 40%;
+        }
+
+        .spec-value {
+            display: table-cell;
+            color: #1e293b;
+            padding: 4px 0;
+        }
+
+        .fleet-analysis {
+            background-color: #f0fdf4;
+            border: 1px solid #86efac;
+            border-left: 4px solid #22c55e;
+            padding: 15px;
+            margin: 20px 0;
+            page-break-inside: avoid;
+        }
+
+        .fleet-analysis h3 {
+            color: #166534;
+            margin-top: 0;
+        }
+
+        .next-steps {
+            background-color: #fef3c7;
+            border: 1px solid #fde047;
+            border-left: 4px solid #eab308;
+            padding: 15px;
+            margin: 20px 0;
+            page-break-inside: avoid;
+        }
+
+        .next-steps h3 {
+            color: #854d0e;
+            margin-top: 0;
+        }
+
+        .next-steps ul {
+            margin: 10px 0 0 20px;
+            padding: 0;
+        }
+
+        .next-steps li {
+            margin: 8px 0;
+            color: #78350f;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #cbd5e1;
+            font-size: 9pt;
+            color: #64748b;
+        }
+
+        .no-ships-message {
+            background-color: #fef2f2;
+            border: 1px solid #fecaca;
+            border-left: 4px solid #ef4444;
+            padding: 20px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .no-ships-message p {
+            color: #991b1b;
+            font-size: 12pt;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="logo">⭐ StarCiti Fleet Guide</div>
+        <div class="subtitle">Personalized Ship Recommendations</div>
+    </div>
+
+    <!-- User Information -->
+    <div class="user-info">
+        <p><strong>Pilot:</strong> {{ user_name }}</p>
+        <p><strong>Email:</strong> {{ user_email }}</p>
+        <p><strong>Consultation ID:</strong> {{ conversation_uuid }}</p>
+        <p><strong>Generated:</strong> {{ generated_date }}</p>
+    </div>
+
+    <!-- Consultation Summary -->
+    <h2>Your Consultation Summary</h2>
+    <div class="ship-specs">
+        <div class="spec-row">
+            <div class="spec-label">Budget Range:</div>
+            <div class="spec-value">{{ budget_range }}</div>
+        </div>
+        <div class="spec-row">
+            <div class="spec-label">Preferred Playstyle:</div>
+            <div class="spec-value">{{ playstyle }}</div>
+        </div>
+        <div class="spec-row">
+            <div class="spec-label">Crew Preference:</div>
+            <div class="spec-value">{{ crew_preference }}</div>
+        </div>
+        <div class="spec-row">
+            <div class="spec-label">Primary Activities:</div>
+            <div class="spec-value">{{ primary_activities }}</div>
+        </div>
+    </div>
+
+    <!-- Recommended Ships -->
+    <h2>Your Recommended Fleet ({{ total_ships }} Ships)</h2>
+
+    {% if ships %}
+        {% for ship in ships %}
+        <div class="ship-card">
+            <div class="ship-header">
+                <div class="ship-name">{{ ship.name }}</div>
+                <div class="ship-manufacturer">{{ ship.manufacturer }}</div>
+            </div>
+
+            <div class="ship-reason">
+                💡 {{ ship.reason }}
+            </div>
+
+            {% if ship.description %}
+            <div class="ship-description">
+                {{ ship.description }}
+            </div>
+            {% endif %}
+
+            <div class="ship-specs">
+                <div class="spec-row">
+                    <div class="spec-label">Role:</div>
+                    <div class="spec-value">{{ ship.focus or 'Multi-Role' }}</div>
+                </div>
+                {% if ship.price_usd %}
+                <div class="spec-row">
+                    <div class="spec-label">Price:</div>
+                    <div class="spec-value">${{ ship.price_usd }} USD</div>
+                </div>
+                {% endif %}
+                <div class="spec-row">
+                    <div class="spec-label">Crew:</div>
+                    <div class="spec-value">{{ ship.crew_min }}-{{ ship.crew_max }} members</div>
+                </div>
+                {% if ship.cargo_capacity %}
+                <div class="spec-row">
+                    <div class="spec-label">Cargo:</div>
+                    <div class="spec-value">{{ ship.cargo_capacity }} SCU</div>
+                </div>
+                {% endif %}
+                {% if ship.speed_scm %}
+                <div class="spec-row">
+                    <div class="spec-label">Speed (SCM/MAX):</div>
+                    <div class="spec-value">{{ ship.speed_scm }}m/s / {{ ship.speed_max }}m/s</div>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+        {% endfor %}
+    {% else %}
+        <div class="no-ships-message">
+            <p>No ships were recommended during this consultation.</p>
+            <p style="font-size: 10pt; margin-top: 10px;">Continue your conversation with Nova to receive personalized recommendations!</p>
+        </div>
+    {% endif %}
+
+    <!-- Fleet Analysis -->
+    {% if ships %}
+    <div class="fleet-analysis">
+        <h3>Strategic Fleet Analysis</h3>
+        <p>{{ fleet_analysis }}</p>
+    </div>
+
+    <!-- Next Steps -->
+    <div class="next-steps">
+        <h3>Next Steps</h3>
+        <ul>
+            <li><strong>Visit the RSI Pledge Store:</strong> Browse and purchase your chosen ships at robertsspaceindustries.com</li>
+            <li><strong>Join the Community:</strong> Connect with other pilots on Spectrum (Star Citizen's official forums)</li>
+            <li><strong>Start Playing:</strong> Download Star Citizen and begin your journey in the 'verse</li>
+            <li><strong>Upgrade Path:</strong> Consider starting with your most versatile ship and expand as you gain experience</li>
+            <li><strong>Insurance:</strong> All ships come with basic insurance - consider upgrading to LTI (Lifetime Insurance) for valuable vessels</li>
+        </ul>
+    </div>
+    {% endif %}
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>Generated by StarCiti Sales Agent powered by AI</p>
+        <p>For questions or support, contact us at {{ user_email }}</p>
+        <p style="margin-top: 10px; font-size: 8pt;">
+            Star Citizen © Cloud Imperium Rights LLC and Cloud Imperium Rights Ltd.<br>
+            This is an unofficial fan-made consultation tool.
+        </p>
+    </div>
+</body>
+</html>
