@@ -140,7 +140,7 @@ async def elevenlabs_post_call_webhook(
         for turn in transcript:
             formatted_transcript.append({
                 "role": turn.get("role", "unknown"),
-                "message": turn.get("message", ""),
+                "content": turn.get("message", ""),
                 "timestamp": turn.get("time", 0)
             })
 
