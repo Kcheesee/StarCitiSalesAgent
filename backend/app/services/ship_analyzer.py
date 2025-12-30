@@ -98,7 +98,7 @@ ONLY return the JSON object, no additional text."""
                 recommended_ships.append({
                     "ship_id": ship.id,
                     "name": ship.name,
-                    "manufacturer": ship.manufacturer,
+                    "manufacturer": ship.manufacturer_name or "Unknown",
                     "slug": ship.slug,
                     "focus": ship.focus,
                     "type": ship.type,
@@ -162,10 +162,10 @@ def extract_ships_by_keyword_matching(
             found_ships.append({
                 "ship_id": ship.id,
                 "name": ship.name,
-                "manufacturer": ship.manufacturer,
+                "manufacturer": ship.manufacturer_name or "Unknown",
                 "slug": ship.slug,
                 "focus": ship.focus,
-                "size": ship.size,
+                "type": ship.type,
                 "cargo_capacity": ship.cargo_capacity,
                 "crew_min": ship.crew_min,
                 "crew_max": ship.crew_max,
