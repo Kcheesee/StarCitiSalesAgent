@@ -13,6 +13,9 @@ function ThankYouPage() {
 
   const { userName, userEmail, pdfUrls, error } = location.state || {};
 
+  // Get API base URL for PDF downloads
+  const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+
   // Redirect to landing page if no user info
   useEffect(() => {
     if (!userName || !userEmail) {
@@ -155,7 +158,7 @@ function ThankYouPage() {
               <div className="space-y-2">
                 {pdfUrls.transcript && (
                   <a
-                    href={pdfUrls.transcript}
+                    href={`${API_BASE_URL}${pdfUrls.transcript}`}
                     download
                     className="flex items-center justify-between bg-gray-600 hover:bg-gray-500 text-white px-4 py-2 rounded transition-colors"
                   >
@@ -167,7 +170,7 @@ function ThankYouPage() {
                 )}
                 {pdfUrls.fleet_guide && (
                   <a
-                    href={pdfUrls.fleet_guide}
+                    href={`${API_BASE_URL}${pdfUrls.fleet_guide}`}
                     download
                     className="flex items-center justify-between bg-gray-600 hover:bg-gray-500 text-white px-4 py-2 rounded transition-colors"
                   >

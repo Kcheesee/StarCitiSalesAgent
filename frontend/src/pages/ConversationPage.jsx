@@ -216,7 +216,7 @@ function ConversationPage() {
 
             {/* Center - Widget */}
             <div className="lg:col-span-6 flex justify-center order-first lg:order-none">
-              <div className="bg-gray-800 border-2 border-blue-500 rounded-xl lg:rounded-2xl p-6 sm:p-8 lg:p-12 shadow-2xl shadow-blue-500/20 w-full max-w-xl">
+              <div className="w-full max-w-xl">
                 {!isWidgetLoaded ? (
                   <div className="text-center py-8">
                     <svg className="animate-spin h-12 w-12 sm:h-16 sm:w-16 text-blue-500 mx-auto mb-4 sm:mb-6" fill="none" viewBox="0 0 24 24">
@@ -226,7 +226,7 @@ function ConversationPage() {
                     <p className="text-gray-400 text-base sm:text-lg">Loading voice assistant...</p>
                   </div>
                 ) : (
-                  <div className="flex flex-col items-center space-y-4 sm:space-y-6">
+                  <div className="flex flex-col items-center">
                     {/* Widget */}
                     <div className="w-full flex justify-center">
                       <elevenlabs-convai
