@@ -10,7 +10,7 @@ import uvicorn
 
 from .config import settings
 from .database import engine, test_connection
-from .api import conversations, voice, ships
+from .api import conversations, voice, ships, webhooks
 
 # ============================================================================
 # Create FastAPI App
@@ -45,6 +45,7 @@ app.add_middleware(
 app.include_router(conversations.router)
 app.include_router(voice.router)
 app.include_router(ships.router)
+app.include_router(webhooks.router)
 
 
 # ============================================================================
