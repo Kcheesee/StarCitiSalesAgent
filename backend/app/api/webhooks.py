@@ -12,7 +12,7 @@ from datetime import datetime
 from ..database import get_db
 from ..models import Conversation
 from ..services.ship_analyzer import analyze_conversation_for_ships
-from ..services.pdf_generator_weasyprint import generate_both_pdfs
+from ..services.pdf_generator_reportlab import generate_both_pdfs
 from ..services.email_service import send_fleet_recommendations
 
 router = APIRouter(prefix="/api/webhooks", tags=["webhooks"])

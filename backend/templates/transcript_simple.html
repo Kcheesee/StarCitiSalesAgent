@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Conversation Transcript</title>
+    <style>
+        @page {
+            size: letter;
+            margin: 1.5cm;
+        }
+
+        body {
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 10pt;
+            line-height: 1.4;
+            color: #1a1a1a;
+        }
+
+        h1 {
+            color: #1e40af;
+            font-size: 22pt;
+            margin-bottom: 8px;
+            border-bottom: 3px solid #3b82f6;
+            padding-bottom: 8px;
+        }
+
+        h2 {
+            color: #1e40af;
+            font-size: 15pt;
+            margin-top: 18px;
+            margin-bottom: 8px;
+            border-bottom: 1px solid #cbd5e1;
+            padding-bottom: 4px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #3b82f6;
+        }
+
+        .logo {
+            font-size: 24pt;
+            font-weight: bold;
+            color: #1e40af;
+            margin-bottom: 4px;
+        }
+
+        .subtitle {
+            font-size: 11pt;
+            color: #64748b;
+        }
+
+        .session-info {
+            background-color: #f1f5f9;
+            padding: 12px;
+            margin-bottom: 18px;
+            border-left: 4px solid #3b82f6;
+        }
+
+        .session-info p {
+            margin: 4px 0;
+            font-size: 10pt;
+        }
+
+        .stats-box {
+            background-color: #f8fafc;
+            border: 1px solid #cbd5e1;
+            padding: 12px;
+            margin: 18px 0;
+        }
+
+        .stats-box table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .stats-box td {
+            padding: 3px 0;
+            font-size: 10pt;
+        }
+
+        .stat-label {
+            font-weight: bold;
+            color: #475569;
+            width: 35%;
+        }
+
+        .message {
+            margin-bottom: 12px;
+            padding: 10px;
+            border-radius: 3px;
+        }
+
+        .message.user {
+            background-color: #dbeafe;
+            border-left: 4px solid #3b82f6;
+        }
+
+        .message.assistant {
+            background-color: #f0fdf4;
+            border-left: 4px solid #22c55e;
+        }
+
+        .message-header {
+            margin-bottom: 5px;
+            font-size: 9pt;
+        }
+
+        .message-role {
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .message.user .message-role {
+            color: #1e40af;
+        }
+
+        .message.assistant .message-role {
+            color: #166534;
+        }
+
+        .message-timestamp {
+            color: #64748b;
+            font-size: 8pt;
+            margin-left: 8px;
+        }
+
+        .message-content {
+            color: #1e293b;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            font-size: 10pt;
+        }
+
+        .no-messages {
+            background-color: #fef2f2;
+            border: 1px solid #fecaca;
+            padding: 18px;
+            text-align: center;
+            color: #991b1b;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 15px;
+            border-top: 1px solid #cbd5e1;
+            font-size: 8pt;
+            color: #64748b;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">⭐ StarCiti Transcript</div>
+        <div class="subtitle">Conversation Record</div>
+    </div>
+
+    <div class="session-info">
+        <p><strong>Pilot:</strong> {{ user_name }}</p>
+        <p><strong>Email:</strong> {{ user_email }}</p>
+        <p><strong>Session ID:</strong> {{ conversation_uuid }}</p>
+        <p><strong>Started:</strong> {{ started_at }}</p>
+        <p><strong>Completed:</strong> {{ completed_at }}</p>
+        <p><strong>Generated:</strong> {{ generated_date }}</p>
+    </div>
+
+    <h2>Session Statistics</h2>
+    <div class="stats-box">
+        <table>
+            <tr>
+                <td class="stat-label">Total Messages:</td>
+                <td>{{ total_messages }}</td>
+            </tr>
+            <tr>
+                <td class="stat-label">Duration:</td>
+                <td>{{ started_at }} to {{ completed_at }}</td>
+            </tr>
+        </table>
+    </div>
+
+    <h2>Conversation History</h2>
+
+    {% if messages %}
+        {% for message in messages %}
+        <div class="message {{ message.role }}">
+            <div class="message-header">
+                <span class="message-role">{{ message.role }}</span>
+                {% if message.timestamp %}
+                <span class="message-timestamp">{{ message.timestamp }}</span>
+                {% endif %}
+            </div>
+            <div class="message-content">{{ message.content }}</div>
+        </div>
+        {% endfor %}
+    {% else %}
+        <div class="no-messages">
+            <p><strong>No conversation messages recorded.</strong></p>
+        </div>
+    {% endif %}
+
+    <div class="footer">
+        <p>Generated by StarCiti Sales Agent powered by AI</p>
+        <p style="margin-top: 8px; font-size: 7pt;">
+            This transcript is a record of your AI-powered consultation session.
+        </p>
+    </div>
+</body>
+</html>
