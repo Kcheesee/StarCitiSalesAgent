@@ -104,7 +104,7 @@ def generate_fleet_guide_pdf_premium(conversation_id: int, db: Session) -> str:
     ships_data = []
     if conversation.recommended_ships:
         for ship_rec in conversation.recommended_ships:
-            ship_id = ship_rec.get("id")
+            ship_id = ship_rec.get("ship_id")  # Fixed: was looking for "id" instead of "ship_id"
             if ship_id:
                 ship = db.query(Ship).filter(Ship.id == ship_id).first()
                 if ship:
