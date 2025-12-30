@@ -7,6 +7,8 @@ from sqlalchemy.orm import Session
 from fastapi import Depends
 from typing import Dict, Any, List
 import os
+import hmac
+import hashlib
 from datetime import datetime
 
 from ..database import get_db
@@ -14,8 +16,36 @@ from ..models import Conversation
 from ..services.ship_analyzer import analyze_conversation_for_ships
 from ..services.pdf_generator_reportlab import generate_both_pdfs
 from ..services.email_service import send_fleet_recommendations
+from ..config import settings
 
 router = APIRouter(prefix="/api/webhooks", tags=["webhooks"])
+
+
+def verify_elevenlabs_signature(body: bytes, signature: str, secret: str) -> bool:
+    """
+    Verify HMAC signature from ElevenLabs webhook
+
+    Args:
+        body: Raw request body bytes
+        signature: Signature from ElevenLabs-Signature header
+        secret: Webhook secret from ElevenLabs dashboard
+
+    Returns:
+        True if signature is valid, False otherwise
+    """
+    if not secret:
+        print("⚠️  Warning: No webhook secret configured, skipping signature verification")
+        return True  # Allow in development without secret
+
+    # Compute HMAC-SHA256 of the request body
+    expected_signature = hmac.new(
+        secret.encode('utf-8'),
+        body,
+        hashlib.sha256
+    ).hexdigest()
+
+    # Compare signatures (constant-time comparison to prevent timing attacks)
+    return hmac.compare_digest(expected_signature, signature)
 
 
 @router.post("/elevenlabs/post-call")
@@ -46,6 +76,23 @@ async def elevenlabs_post_call_webhook(
     }
     """
     try:
+        # Get raw request body for signature verification
+        body = await request.body()
+
+        # Verify HMAC signature
+        signature = request.headers.get("elevenlabs-signature") or request.headers.get("x-elevenlabs-signature")
+
+        if signature and settings.ELEVENLABS_WEBHOOK_SECRET:
+            if not verify_elevenlabs_signature(body, signature, settings.ELEVENLABS_WEBHOOK_SECRET):
+                print(f"❌ Invalid webhook signature!")
+                raise HTTPException(
+                    status_code=status.HTTP_401_UNAUTHORIZED,
+                    detail="Invalid webhook signature"
+                )
+            print(f"✅ Webhook signature verified")
+        elif not signature:
+            print(f"⚠️  No signature provided in headers")
+
         # Parse webhook payload
         payload = await request.json()
 

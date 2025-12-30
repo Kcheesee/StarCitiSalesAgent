@@ -27,6 +27,7 @@ class Settings(BaseSettings):
     ANTHROPIC_API_KEY: str = os.getenv("ANTHROPIC_API_KEY", "")
     ELEVENLABS_API_KEY: str = os.getenv("ELEVENLABS_API_KEY", "")
     ELEVENLABS_VOICE_ID: str = os.getenv("ELEVENLABS_VOICE_ID", "21m00Tcm4TlvDq8ikWAM")
+    ELEVENLABS_WEBHOOK_SECRET: str = os.getenv("ELEVENLABS_WEBHOOK_SECRET", "")
     SENDGRID_API_KEY: str = os.getenv("SENDGRID_API_KEY", "")
 
     # Email Settings
