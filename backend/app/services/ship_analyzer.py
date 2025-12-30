@@ -35,7 +35,7 @@ def analyze_conversation_for_ships(
 
     # Build conversation text
     conversation_text = "\n\n".join([
-        f"{turn['role'].upper()}: {turn['message']}"
+        f"{turn['role'].upper()}: {turn.get('content', turn.get('message', ''))}"
         for turn in transcript
     ])
 
@@ -151,7 +151,7 @@ def extract_ships_by_keyword_matching(
     all_ships = db.query(Ship).all()
 
     conversation_text = " ".join([
-        turn['message'].lower()
+        turn.get('content', turn.get('message', '')).lower()
         for turn in transcript
     ])
 
