@@ -32,8 +32,9 @@ function ConversationPage() {
 
     const script = document.createElement('script');
     script.id = 'elevenlabs-convai';
-    script.src = 'https://elevenlabs.io/convai-widget/index.js';
+    script.src = 'https://unpkg.com/@elevenlabs/convai-widget-embed@beta';
     script.async = true;
+    script.type = 'text/javascript';
 
     script.onload = () => {
       console.log('ElevenLabs widget script loaded');
