@@ -101,7 +101,7 @@ ONLY return the JSON object, no additional text."""
                     "manufacturer": ship.manufacturer,
                     "slug": ship.slug,
                     "focus": ship.focus,
-                    "size": ship.size,
+                    "type": ship.type,
                     "cargo_capacity": ship.cargo_capacity,
                     "crew_min": ship.crew_min,
                     "crew_max": ship.crew_max,
