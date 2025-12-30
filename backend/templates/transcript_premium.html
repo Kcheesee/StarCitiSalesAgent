@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversation Transcript - StarCiti Sales Agent</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap');
+
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 10pt;
+            line-height: 1.6;
+            color: #e2e8f0;
+            background: #0f172a;
+            position: relative;
+        }
+
+        /* Geometric Background Elements */
+        .bg-decoration {
+            position: fixed;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .bg-decoration.top-right {
+            top: -100px;
+            right: -100px;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .bg-decoration.bottom-left {
+            bottom: -150px;
+            left: -150px;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(147, 51, 234, 0.12) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .content-wrapper {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3730a3 50%, #7c3aed 100%);
+            padding: 50px 60px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background:
+                linear-gradient(45deg, transparent 30%, rgba(255,255,255,0.03) 30%, rgba(255,255,255,0.03) 50%, transparent 50%),
+                linear-gradient(-45deg, transparent 30%, rgba(255,255,255,0.03) 30%, rgba(255,255,255,0.03) 50%, transparent 50%);
+            background-size: 60px 60px;
+            opacity: 0.3;
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .header-logo {
+            width: 80px;
+            margin-bottom: 20px;
+            filter: brightness(0) invert(1);
+            opacity: 0.9;
+        }
+
+        .header h1 {
+            font-size: 36pt;
+            font-weight: 900;
+            color: white;
+            margin-bottom: 8px;
+            letter-spacing: -0.02em;
+            text-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+
+        .header-subtitle {
+            font-size: 14pt;
+            color: rgba(255,255,255,0.8);
+            font-weight: 400;
+            letter-spacing: 0.05em;
+        }
+
+        /* Meta Information */
+        .meta-section {
+            padding: 40px 60px;
+            background: #0f172a;
+        }
+
+        .meta-card {
+            background: linear-gradient(135deg, rgba(30, 58, 138, 0.3) 0%, rgba(17, 24, 39, 0.5) 100%);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+        }
+
+        .meta-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(180deg, #3b82f6 0%, #8b5cf6 100%);
+        }
+
+        .meta-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .meta-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+        }
+
+        .meta-label {
+            font-size: 10pt;
+            color: #64748b;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .meta-value {
+            font-size: 11pt;
+            color: white;
+            font-weight: 600;
+            text-align: right;
+        }
+
+        /* About Box */
+        .about-section {
+            padding: 0 60px 40px 60px;
+        }
+
+        .about-box {
+            background: rgba(59, 130, 246, 0.1);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+        }
+
+        .about-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: #3b82f6;
+        }
+
+        .about-box h2 {
+            font-size: 16pt;
+            color: #60a5fa;
+            font-weight: 700;
+            margin-bottom: 12px;
+            letter-spacing: -0.01em;
+        }
+
+        .about-box p {
+            color: #cbd5e1;
+            line-height: 1.8;
+            font-size: 10pt;
+        }
+
+        /* Conversation Section */
+        .conversation-section {
+            padding: 40px 60px;
+        }
+
+        .section-header {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .section-title {
+            font-size: 24pt;
+            font-weight: 900;
+            color: white;
+            letter-spacing: -0.02em;
+        }
+
+        .section-title::before {
+            content: '◆';
+            color: #3b82f6;
+            margin-right: 12px;
+        }
+
+        .conversation {
+            max-width: 100%;
+        }
+
+        .message {
+            margin-bottom: 24px;
+            page-break-inside: avoid;
+        }
+
+        .message-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 10px;
+        }
+
+        .message-avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 12pt;
+        }
+
+        .message-avatar.user {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+        }
+
+        .message-avatar.assistant {
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+            color: white;
+        }
+
+        .message-meta {
+            flex: 1;
+        }
+
+        .message-role {
+            font-size: 11pt;
+            font-weight: 700;
+            color: white;
+        }
+
+        .message-timestamp {
+            font-size: 9pt;
+            color: #64748b;
+        }
+
+        .message-content {
+            margin-left: 44px;
+            padding: 20px;
+            border-radius: 12px;
+            line-height: 1.7;
+            font-size: 10pt;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            position: relative;
+        }
+
+        .message.user .message-content {
+            background: rgba(16, 185, 129, 0.1);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            color: #cbd5e1;
+        }
+
+        .message.user .message-content::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: #10b981;
+            border-radius: 12px 0 0 12px;
+        }
+
+        .message.assistant .message-content {
+            background: rgba(59, 130, 246, 0.1);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            color: #cbd5e1;
+        }
+
+        .message.assistant .message-content::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: #3b82f6;
+            border-radius: 12px 0 0 12px;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 60px;
+            padding: 30px 60px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            text-align: center;
+        }
+
+        .footer-brand {
+            font-size: 12pt;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 8px;
+        }
+
+        .footer-tagline {
+            font-size: 10pt;
+            color: #64748b;
+            margin-bottom: 12px;
+        }
+
+        .footer-link {
+            color: #60a5fa;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .footer-generated {
+            font-size: 9pt;
+            color: #475569;
+            margin-top: 12px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Background Decorations -->
+    <div class="bg-decoration top-right"></div>
+    <div class="bg-decoration bottom-left"></div>
+
+    <div class="content-wrapper">
+        <!-- Header -->
+        <div class="header">
+            <div class="header-content">
+                <!-- Logo placeholder -->
+                <svg class="header-logo" viewBox="0 0 100 100" fill="white">
+                    <circle cx="50" cy="50" r="45" stroke="white" stroke-width="2" fill="none"/>
+                    <path d="M 50 10 L 50 90 M 10 50 L 90 50" stroke="white" stroke-width="2"/>
+                    <circle cx="50" cy="50" r="15" fill="white"/>
+                </svg>
+
+                <h1>StarCiti Sales Agent</h1>
+                <div class="header-subtitle">Conversation Transcript</div>
+            </div>
+        </div>
+
+        <!-- Meta Information -->
+        <div class="meta-section">
+            <div class="meta-card">
+                <div class="meta-grid">
+                    <div class="meta-item">
+                        <span class="meta-label">Conversation ID</span>
+                        <span class="meta-value">{{ conversation_uuid[:8].upper() }}</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Total Messages</span>
+                        <span class="meta-value">{{ total_messages }}</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Started</span>
+                        <span class="meta-value">{{ started_at }}</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Completed</span>
+                        <span class="meta-value">{{ completed_at or "In Progress" }}</span>
+                    </div>
+                    <div class="meta-item" style="grid-column: 1 / -1;">
+                        <span class="meta-label">Contact Email</span>
+                        <span class="meta-value">{{ user_email }}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <div class="about-section">
+            <div class="about-box">
+                <h2>About This Transcript</h2>
+                <p>
+                    This document contains your complete conversation with Nova, your AI ship consultant.
+                    Nova helped you discover the perfect Star Citizen ships based on your playstyle, budget,
+                    and preferences. Use this transcript to review the consultation and share with friends or organization members.
+                </p>
+            </div>
+        </div>
+
+        <!-- Conversation -->
+        <div class="conversation-section">
+            <div class="section-header">
+                <h2 class="section-title">Conversation History</h2>
+            </div>
+
+            <div class="conversation">
+                {% for message in messages %}
+                <div class="message {{ message.role }}">
+                    <div class="message-header">
+                        <div class="message-avatar {{ message.role }}">
+                            {% if message.role == 'user' %}C{% else %}N{% endif %}
+                        </div>
+                        <div class="message-meta">
+                            <div class="message-role">
+                                {% if message.role == 'user' %}Citizen{% else %}Nova{% endif %}
+                            </div>
+                            {% if message.timestamp %}
+                            <div class="message-timestamp">{{ message.timestamp }}</div>
+                            {% endif %}
+                        </div>
+                    </div>
+                    <div class="message-content">{{ message.content }}</div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-brand">STARCITI SALES AGENT</div>
+            <div class="footer-tagline">
+                Powered by Claude AI ◆ Your AI-Powered Ship Consultant
+            </div>
+            <div>
+                Visit <a href="https://robertsspaceindustries.com" class="footer-link">robertsspaceindustries.com</a> to explore the verse
+            </div>
+            <div class="footer-generated">
+                Generated on {{ generated_date }}
+            </div>
+        </div>
+    </div>
+</body>
+</html>

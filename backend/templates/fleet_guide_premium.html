@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fleet Composition Guide - StarCiti Sales Agent</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap');
+
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 10pt;
+            line-height: 1.6;
+            color: #e2e8f0;
+            background: #0f172a;
+            position: relative;
+        }
+
+        /* Geometric Background Elements */
+        .bg-decoration {
+            position: fixed;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .bg-decoration.top-right {
+            top: -100px;
+            right: -100px;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .bg-decoration.bottom-left {
+            bottom: -150px;
+            left: -150px;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(147, 51, 234, 0.12) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .bg-decoration.diagonal {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, transparent 0%, rgba(30, 58, 138, 0.05) 50%, transparent 100%);
+        }
+
+        .content-wrapper {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Cover Page */
+        .cover-page {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 60px;
+            background: linear-gradient(135deg, #1e3a8a 0%, #3730a3 50%, #7c3aed 100%);
+            position: relative;
+            overflow: hidden;
+            page-break-after: always;
+        }
+
+        .cover-page::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background:
+                linear-gradient(45deg, transparent 30%, rgba(255,255,255,0.03) 30%, rgba(255,255,255,0.03) 50%, transparent 50%),
+                linear-gradient(-45deg, transparent 30%, rgba(255,255,255,0.03) 30%, rgba(255,255,255,0.03) 50%, transparent 50%);
+            background-size: 60px 60px;
+            opacity: 0.3;
+        }
+
+        .cover-logo {
+            width: 120px;
+            margin-bottom: 60px;
+            filter: brightness(0) invert(1);
+            opacity: 0.9;
+        }
+
+        .cover-page h1 {
+            font-size: 48pt;
+            font-weight: 900;
+            color: white;
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+            text-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+
+        .cover-subtitle {
+            font-size: 20pt;
+            font-weight: 300;
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 80px;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        .cover-meta {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 20px;
+            background: rgba(0,0,0,0.2);
+            padding: 30px;
+            border-radius: 12px;
+            border-left: 4px solid rgba(255,255,255,0.3);
+            backdrop-filter: blur(10px);
+        }
+
+        .cover-meta-item {
+            display: contents;
+        }
+
+        .cover-meta-label {
+            font-size: 11pt;
+            font-weight: 600;
+            color: rgba(255,255,255,0.6);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .cover-meta-value {
+            font-size: 14pt;
+            font-weight: 600;
+            color: white;
+        }
+
+        .classification-badge {
+            position: absolute;
+            top: 40px;
+            right: 60px;
+            background: rgba(239, 68, 68, 0.2);
+            border: 2px solid #ef4444;
+            color: #fca5a5;
+            padding: 8px 20px;
+            border-radius: 6px;
+            font-size: 11pt;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+        }
+
+        /* Content Pages */
+        .page {
+            padding: 50px 60px;
+            background: #0f172a;
+            min-height: 100vh;
+            page-break-after: always;
+        }
+
+        .page-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .page-number {
+            font-size: 10pt;
+            color: #64748b;
+            font-weight: 600;
+        }
+
+        .section-title {
+            font-size: 28pt;
+            font-weight: 900;
+            color: white;
+            margin-bottom: 8px;
+            letter-spacing: -0.02em;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::before {
+            content: '◆';
+            color: #3b82f6;
+            margin-right: 12px;
+            font-size: 24pt;
+        }
+
+        .section-subtitle {
+            font-size: 12pt;
+            color: #94a3b8;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        /* Mission Profile Card */
+        .profile-card {
+            background: linear-gradient(135deg, rgba(30, 58, 138, 0.3) 0%, rgba(17, 24, 39, 0.5) 100%);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 40px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .profile-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(180deg, #3b82f6 0%, #8b5cf6 100%);
+        }
+
+        .profile-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+        }
+
+        .profile-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .profile-label {
+            font-size: 9pt;
+            color: #64748b;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+
+        .profile-value {
+            font-size: 16pt;
+            color: white;
+            font-weight: 600;
+        }
+
+        /* Fleet Analysis Box */
+        .analysis-box {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.15) 0%, rgba(5, 150, 105, 0.05) 100%);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .analysis-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: #10b981;
+        }
+
+        .analysis-box h3 {
+            font-size: 18pt;
+            color: #10b981;
+            font-weight: 700;
+            margin-bottom: 16px;
+            letter-spacing: -0.01em;
+        }
+
+        .analysis-box p {
+            color: #cbd5e1;
+            line-height: 1.8;
+            font-size: 10.5pt;
+        }
+
+        /* Ship Cards */
+        .ship-card {
+            background: rgba(30, 41, 59, 0.6);
+            border: 1px solid rgba(71, 85, 105, 0.5);
+            border-radius: 16px;
+            padding: 0;
+            margin-bottom: 30px;
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+            page-break-inside: avoid;
+        }
+
+        .ship-header {
+            background: linear-gradient(135deg, rgba(30, 58, 138, 0.4) 0%, rgba(17, 24, 39, 0.6) 100%);
+            padding: 24px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(71, 85, 105, 0.5);
+        }
+
+        .ship-title-group {
+            flex: 1;
+        }
+
+        .ship-number {
+            font-size: 11pt;
+            color: #3b82f6;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            margin-bottom: 4px;
+        }
+
+        .ship-name {
+            font-size: 24pt;
+            color: white;
+            font-weight: 900;
+            letter-spacing: -0.02em;
+            margin-bottom: 4px;
+        }
+
+        .ship-manufacturer {
+            font-size: 11pt;
+            color: #64748b;
+            font-weight: 500;
+        }
+
+        .ship-price {
+            font-size: 28pt;
+            color: #10b981;
+            font-weight: 900;
+            letter-spacing: -0.02em;
+            text-align: right;
+        }
+
+        .ship-image-container {
+            width: 100%;
+            height: 280px;
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ship-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.9;
+        }
+
+        .ship-content {
+            padding: 30px;
+        }
+
+        .role-badges {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .role-badge {
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+            color: white;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 9pt;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        .role-badge.secondary {
+            background: linear-gradient(135deg, #64748b 0%, #475569 100%);
+        }
+
+        .ship-description {
+            color: #94a3b8;
+            margin-bottom: 20px;
+            line-height: 1.7;
+            font-size: 10pt;
+        }
+
+        .recommendation-box {
+            background: rgba(59, 130, 246, 0.1);
+            border-left: 3px solid #3b82f6;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .recommendation-box .title {
+            font-size: 11pt;
+            font-weight: 700;
+            color: #3b82f6;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .recommendation-box .text {
+            color: #cbd5e1;
+            line-height: 1.7;
+            font-size: 10pt;
+        }
+
+        .specs-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            background: rgba(15, 23, 42, 0.6);
+            padding: 24px;
+            border-radius: 12px;
+            border: 1px solid rgba(71, 85, 105, 0.3);
+        }
+
+        .spec-item {
+            text-align: center;
+        }
+
+        .spec-label {
+            font-size: 8pt;
+            color: #64748b;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+
+        .spec-value {
+            font-size: 18pt;
+            color: white;
+            font-weight: 900;
+            letter-spacing: -0.01em;
+        }
+
+        /* Mission Directives */
+        .directives-box {
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.15) 0%, rgba(217, 119, 6, 0.05) 100%);
+            border: 1px solid rgba(245, 158, 11, 0.3);
+            border-radius: 16px;
+            padding: 30px;
+            position: relative;
+        }
+
+        .directives-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: #f59e0b;
+        }
+
+        .directives-box h3 {
+            font-size: 18pt;
+            color: #fbbf24;
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: -0.01em;
+        }
+
+        .directives-box ol {
+            margin-left: 24px;
+            color: #cbd5e1;
+        }
+
+        .directives-box li {
+            margin-bottom: 12px;
+            line-height: 1.7;
+            font-size: 10pt;
+        }
+
+        .directives-box a {
+            color: #60a5fa;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        /* Footer */
+        .page-footer {
+            margin-top: 50px;
+            padding-top: 24px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            text-align: center;
+        }
+
+        .page-footer .brand {
+            font-size: 12pt;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 8px;
+        }
+
+        .page-footer .tagline {
+            font-size: 9pt;
+            color: #64748b;
+            margin-bottom: 16px;
+        }
+
+        .page-footer .disclaimer {
+            font-size: 8pt;
+            color: #475569;
+            font-style: italic;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <!-- Background Decorations -->
+    <div class="bg-decoration top-right"></div>
+    <div class="bg-decoration bottom-left"></div>
+    <div class="bg-decoration diagonal"></div>
+
+    <div class="content-wrapper">
+        <!-- Cover Page -->
+        <div class="cover-page">
+            <div class="classification-badge">CONFIDENTIAL</div>
+
+            <!-- Logo placeholder -->
+            <svg class="cover-logo" viewBox="0 0 100 100" fill="white">
+                <circle cx="50" cy="50" r="45" stroke="white" stroke-width="2" fill="none"/>
+                <path d="M 50 10 L 50 90 M 10 50 L 90 50" stroke="white" stroke-width="2"/>
+                <circle cx="50" cy="50" r="15" fill="white"/>
+            </svg>
+
+            <h1>Fleet Composition Guide</h1>
+            <div class="cover-subtitle">◆ Personal Ship Recommendations ◆</div>
+
+            <div class="cover-meta">
+                <div class="cover-meta-item">
+                    <div class="cover-meta-label">Prepared For</div>
+                    <div class="cover-meta-value">{{ user_name or user_email }}</div>
+                </div>
+                <div class="cover-meta-item">
+                    <div class="cover-meta-label">Agent ID</div>
+                    <div class="cover-meta-value">{{ conversation_uuid[:8].upper() }}</div>
+                </div>
+                <div class="cover-meta-item">
+                    <div class="cover-meta-label">Classification</div>
+                    <div class="cover-meta-value">Confidential</div>
+                </div>
+                <div class="cover-meta-item">
+                    <div class="cover-meta-label">Date</div>
+                    <div class="cover-meta-value">{{ generated_date }}</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mission Profile Page -->
+        <div class="page">
+            <div class="page-header">
+                <div></div>
+                <div class="page-number">PAGE 02</div>
+            </div>
+
+            <h2 class="section-title">Your Mission Profile</h2>
+            <div class="section-subtitle">Operational Parameters</div>
+
+            <div class="profile-card">
+                <div class="profile-grid">
+                    <div class="profile-item">
+                        <div class="profile-label">Budget Range</div>
+                        <div class="profile-value">{{ budget_range }}</div>
+                    </div>
+                    <div class="profile-item">
+                        <div class="profile-label">Playstyle</div>
+                        <div class="profile-value">{{ playstyle }}</div>
+                    </div>
+                    <div class="profile-item">
+                        <div class="profile-label">Crew Preference</div>
+                        <div class="profile-value">{{ crew_preference }}</div>
+                    </div>
+                    <div class="profile-item">
+                        <div class="profile-label">Primary Activities</div>
+                        <div class="profile-value">{{ primary_activities }}</div>
+                    </div>
+                </div>
+            </div>
+
+            {% if fleet_analysis %}
+            <div class="analysis-box">
+                <h3>Fleet Strategic Analysis</h3>
+                <p>{{ fleet_analysis }}</p>
+            </div>
+            {% endif %}
+        </div>
+
+        <!-- Ships Pages -->
+        <div class="page">
+            <div class="page-header">
+                <div></div>
+                <div class="page-number">PAGE 03</div>
+            </div>
+
+            <h2 class="section-title">Recommended Vessels</h2>
+            <div class="section-subtitle">{{ total_ships }} Ships Selected</div>
+
+            {% for ship in ships %}
+            <div class="ship-card">
+                <div class="ship-header">
+                    <div class="ship-title-group">
+                        <div class="ship-number">[ {{ loop.index }} ]</div>
+                        <div class="ship-name">{{ ship.name }}</div>
+                        <div class="ship-manufacturer">{{ ship.manufacturer }}</div>
+                    </div>
+                    {% if ship.price_usd %}
+                    <div class="ship-price">${{ ship.price_usd }}</div>
+                    {% endif %}
+                </div>
+
+                <div class="ship-content">
+                    <div class="role-badges">
+                        <span class="role-badge">{{ ship.focus }}</span>
+                        <span class="role-badge secondary">{{ ship.type }}</span>
+                    </div>
+
+                    {% if ship.description %}
+                    <div class="ship-description">
+                        {{ ship.description }}
+                    </div>
+                    {% endif %}
+
+                    <div class="recommendation-box">
+                        <div class="title">◆ Why This Vessel</div>
+                        <div class="text">{{ ship.reason }}</div>
+                    </div>
+
+                    <div class="specs-grid">
+                        <div class="spec-item">
+                            <div class="spec-label">Crew</div>
+                            <div class="spec-value">{{ ship.crew_min or 1 }}-{{ ship.crew_max or ship.crew_min or 1 }}</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-label">Cargo</div>
+                            <div class="spec-value">{{ ship.cargo_capacity or 0 }} SCU</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-label">SCM Speed</div>
+                            <div class="spec-value">{{ ship.speed_scm|int if ship.speed_scm else "N/A" }} m/s</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-label">Max Speed</div>
+                            <div class="spec-value">{{ ship.speed_max|int if ship.speed_max else "N/A" }} m/s</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+
+            {% if total_ships == 0 %}
+            <div style="text-align: center; padding: 60px; background: rgba(30, 41, 59, 0.4); border-radius: 16px; border: 1px solid rgba(71, 85, 105, 0.5);">
+                <p style="color: #64748b; font-size: 14pt;">
+                    No vessels have been recommended yet. Continue your consultation with Nova to receive personalized ship recommendations.
+                </p>
+            </div>
+            {% endif %}
+        </div>
+
+        <!-- Mission Directives Page -->
+        <div class="page">
+            <div class="page-header">
+                <div></div>
+                <div class="page-number">PAGE {{ total_ships + 3 }}</div>
+            </div>
+
+            <h2 class="section-title">Mission Directives</h2>
+            <div class="section-subtitle">Next Steps</div>
+
+            <div class="directives-box">
+                <h3>◆ Recommended Actions</h3>
+                <ol>
+                    <li>Visit the RSI Pledge Store at <a href="https://robertsspaceindustries.com/pledge/ships">robertsspaceindustries.com/pledge/ships</a> to review and purchase these vessels</li>
+                    <li>Join the Star Citizen community on Spectrum forums to connect with other citizens and organizations</li>
+                    <li>Watch ship review videos and gameplay footage on YouTube to see these vessels in operational scenarios</li>
+                    <li>Download and install Star Citizen to begin your journey at <a href="https://robertsspaceindustries.com/download">robertsspaceindustries.com/download</a></li>
+                    <li>Consider joining an organization to maximize multi-crew opportunities and fleet synergies</li>
+                </ol>
+            </div>
+
+            <div class="page-footer">
+                <div class="brand">STARCITI SALES AGENT</div>
+                <div class="tagline">Powered by Claude AI ◆ See you in the 'verse</div>
+                <div class="disclaimer">
+                    Ship specifications and prices are subject to change during Star Citizen's development.<br>
+                    Always verify current information at robertsspaceindustries.com before purchasing.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

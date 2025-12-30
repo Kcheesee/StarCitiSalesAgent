@@ -22,6 +22,7 @@ class Conversation(Base):
     )
 
     # User Info
+    user_name = Column(String(200))
     user_email = Column(String(255), index=True)
     user_budget_usd = Column(Integer)
     user_playstyle = Column(String(100))
