@@ -13,7 +13,7 @@ import os
 
 from ..database import get_db
 from ..services.ai_consultant import ConversationManager
-from ..services.pdf_generator_reportlab import generate_both_pdfs
+from ..services.pdf_generator_premium import generate_both_pdfs_premium as generate_both_pdfs
 from ..services.email_service import send_fleet_recommendations
 from ..models import Conversation
 
