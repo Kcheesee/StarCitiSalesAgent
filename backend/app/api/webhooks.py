@@ -14,7 +14,7 @@ from datetime import datetime
 from ..database import get_db
 from ..models import Conversation
 from ..services.ship_analyzer import analyze_conversation_for_ships
-from ..services.pdf_generator_premium import generate_both_pdfs_premium as generate_both_pdfs
+from ..services.pdf_generator_weasyprint import generate_both_pdfs  # WeasyPrint (no browser needed)
 from ..services.email_service import send_fleet_recommendations
 from ..config import settings
 

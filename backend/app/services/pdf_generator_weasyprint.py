@@ -103,6 +103,11 @@ def generate_fleet_guide_pdf(conversation_id: int, db: Session) -> str:
     conversation = db.query(Conversation).filter(Conversation.id == conversation_id).first()
     if not conversation:
         raise ValueError(f"Conversation {conversation_id} not found")
+    
+    # Refresh to get latest data (in case webhook just updated it)
+    db.refresh(conversation)
+    
+    print(f"🔍 DEBUG FLEET: Conversation has {len(conversation.recommended_ships or [])} ships")
 
     # Get ship details from recommended_ships
     ships_data = []
@@ -211,6 +216,11 @@ def generate_transcript_pdf(conversation_id: int, db: Session) -> str:
     conversation = db.query(Conversation).filter(Conversation.id == conversation_id).first()
     if not conversation:
         raise ValueError(f"Conversation {conversation_id} not found")
+    
+    # Refresh to get latest data (in case webhook just updated it)
+    db.refresh(conversation)
+    
+    print(f"🔍 DEBUG TRANSCRIPT: Conversation has {len(conversation.transcript or [])} turns")
 
     # Format messages
     messages = []
