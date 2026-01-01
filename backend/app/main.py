@@ -82,14 +82,19 @@ def health_check():
     try:
         # Test database connection
         db_healthy = test_connection()
-
+        
+        # Check which PDF generator is loaded
+        from .api import webhooks
+        pdf_generator = webhooks.generate_both_pdfs.__module__
+        
         if db_healthy:
             return JSONResponse(
                 status_code=status.HTTP_200_OK,
                 content={
                     "status": "healthy",
                     "database": "connected",
-                    "api": "operational"
+                    "api": "operational",
+                    "pdf_generator": pdf_generator  # Debug: verify correct generator
                 }
             )
         else:
@@ -98,7 +103,8 @@ def health_check():
                 content={
                     "status": "unhealthy",
                     "database": "disconnected",
-                    "api": "operational"
+                    "api": "operational",
+                    "pdf_generator": pdf_generator
                 }
             )
 
